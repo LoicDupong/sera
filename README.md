@@ -1,107 +1,43 @@
 # Sera
 
-Event management app — create events, manage your guest list, and track RSVPs through a private link.
+**Gérez vos invitations d'événements privés, sans friction.**
 
-Built by **Loïc Dupong**.
+Sera centralise tout ce dont un organisateur a besoin : créer un événement, constituer sa liste d'invités, partager un lien, et suivre les réponses en temps réel — le tout depuis une interface claire et moderne.
 
 ---
 
-## What it does
+## Le problème
 
-A host creates an event and gets a private invite link. Guests open the link, confirm their identity (first + last name), and submit their RSVP — no account needed. The host sees everything in a live dashboard.
+Organiser un événement privé, c'est toujours le même chaos : des messages éparpillés sur WhatsApp, des SMS sans réponse, un tableur pour essayer de suivre qui vient. Impossible de savoir en un coup d'œil combien de personnes seront là.
 
-**MVP scope:**
-- Host auth (register / login)
-- Create and manage events
-- Manual guest list
-- Private invite link per event
-- Guest RSVP: yes / no / maybe
-- Dashboard with RSVP stats and filters
-- PWA installable
+**Sera résout ça.**
+
+---
+
+## Ce que ça fait
+
+L'organisateur crée son événement en quelques secondes et obtient un **lien d'invitation privé**. Il l'envoie à ses invités — par n'importe quel canal. Les invités ouvrent le lien, confirment leur identité et répondent. Pas de compte à créer, pas de friction.
+
+L'organisateur voit tout en temps réel depuis son dashboard : qui a répondu, qui est présent, qui hésite, qui est absent.
+
+---
+
+## Fonctionnalités
+
+- Création d'événement (titre, date, lieu, description)
+- Liste d'invités manuelle
+- Lien d'invitation privé par événement
+- RSVP en 3 options — Présent · Peut-être · Absent
+- Dashboard avec statistiques et filtres par statut
+- Accès invité sans compte
+- Application installable (PWA)
 
 ---
 
 ## Stack
 
-| Layer | Tech |
-|---|---|
-| Frontend | Next.js App Router + SCSS Modules |
-| Backend | Express |
-| Database | PostgreSQL + Sequelize |
-| Auth | JWT + argon2 |
-| State | Zustand |
-| API | REST |
+Next.js · Express · PostgreSQL · JWT
 
 ---
 
-## Project structure
-
-```
-sera/
-├── frontend/          # Next.js App Router
-│   ├── app/           # Pages (dashboard, invite, auth)
-│   ├── components/    # Shared UI components
-│   ├── styles/        # SCSS Modules per page
-│   ├── store/         # Zustand auth store
-│   └── lib/           # Axios instance
-├── backend/           # Express API
-│   └── src/
-│       ├── controllers/
-│       ├── models/    # Sequelize models
-│       ├── routes/
-│       └── middlewares/
-└── docs/              # Product specs and design docs
-```
-
----
-
-## Getting started
-
-### Prerequisites
-
-- Node.js 18+
-- PostgreSQL
-
-### Backend
-
-```bash
-cd backend
-cp .env.example .env   # fill DB credentials and JWT_SECRET
-npm install
-npm run dev
-```
-
-### Frontend
-
-```bash
-cd frontend
-cp .env.local.example .env.local   # set NEXT_PUBLIC_API_URL
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
----
-
-## Environment variables
-
-**Backend `.env`**
-```
-PORT=5000
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=sera
-DB_USER=postgres
-DB_PASS=yourpassword
-JWT_SECRET=yoursecret
-```
-
-**Frontend `.env.local`**
-```
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
-```
-
----
-
-*Made by Loïc Dupong — [loic@dgco-it.be](mailto:loic@dgco-it.be)*
+*Fait par Loïc Dupong — [loic@dgco-it.be](mailto:loic@dgco-it.be)*
