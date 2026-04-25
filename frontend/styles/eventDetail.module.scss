@@ -178,21 +178,10 @@
   box-shadow: var(--shadow-xs);
   backdrop-filter: blur(18px) saturate(160%);
 
-  &.yes {
-    border-top: 3px solid var(--mint);
-  }
-
-  &.maybe {
-    border-top: 3px solid var(--violet);
-  }
-
-  &.no {
-    border-top: 3px solid var(--rose);
-  }
-
-  &.pending {
-    border-top: 3px solid var(--gold);
-  }
+  &.yes .statValue { color: var(--mint); }
+  &.maybe .statValue { color: var(--violet); }
+  &.no .statValue { color: var(--rose); }
+  &.pending .statValue { color: var(--gold); }
 }
 
 .statValue {

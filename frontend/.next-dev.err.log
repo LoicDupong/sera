@@ -1,0 +1,3630 @@
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./app/layout.js:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./app/layout.js:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/layout.js:1:1
+Module not found: Can't resolve './globals.css'
+> 1 | import './globals.css';
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+  3 |
+  4 | export const metadata = {
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="dashboard/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="dashboard/...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                          <DashboardPage params={Promise} searchParams={Promise}>
+                            <div className="dashboard-...">
++                             <h1 className="dashboard-module-scss-module__1WzNXW__heading">
+-                             <section>
+                              ...
+                      ...
+                    ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at h1 (<anonymous>)
+    at DashboardPage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/_0d5jhvz._.js:132:215)
+    at ClientPageRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_0z8ikg~._.js:4688:50)
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  [90m3 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+  [90m4 |[0m [36mimport[0m api [36mfrom[0m [32m'@/lib/api'[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+  [90m7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m8 |[0m
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  3 | import Link from 'next/link';
+  4 | import api from '@/lib/api';
+> 5 | import EventCard from '@/components/EventCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import useAuthStore from '@/store/authStore';
+  7 | import s from '@/styles/dashboard.module.scss';
+  8 |
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./app/dashboard/page.js:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./app/dashboard/page.js:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  3 | import Link from 'next/link';
+  4 | import api from '@/lib/api';
+> 5 | import EventCard from '@/components/EventCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import useAuthStore from '@/store/authStore';
+  7 | import s from '@/styles/dashboard.module.scss';
+  8 |
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/dashboard/page.js:5:1
+Module not found: Can't resolve '@/components/EventCard'
+  3 | import Link from 'next/link';
+  4 | import api from '@/lib/api';
+> 5 | import EventCard from '@/components/EventCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import useAuthStore from '@/store/authStore';
+  7 | import s from '@/styles/dashboard.module.scss';
+  8 |
+
+Import map: aliased to relative './components/EventCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="dashboard/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="dashboard/...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                          <DashboardPage params={Promise} searchParams={Promise}>
+                            <div className="dashboard-...">
++                             <h1 className="dashboard-module-scss-module__1WzNXW__heading">
+-                             <section>
+                              ...
+                      ...
+                    ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at h1 (<anonymous>)
+    at DashboardPage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/_0d5jhvz._.js:132:215)
+    at ClientPageRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_0z8ikg~._.js:4688:50)
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m 5 |[0m [36mimport[0m [33mEventCard[0m [36mfrom[0m [32m'@/components/EventCard'[0m;
+  [90m 6 |[0m [36mimport[0m useAuthStore [36mfrom[0m [32m'@/store/authStore'[0m;
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mDashboardPage[0m() {
+  [90m10 |[0m   [36mconst[0m user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m s [36mfrom[0m [32m'@/styles/dashboard.module.scss'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mACCENTS[0m = [[32m'coral'[0m, [32m'gold'[0m, [32m'mint'[0m, [32m'violet'[0m];
+  [90m5 |[0m
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+   5 | import EventCard from '@/components/EventCard';
+   6 | import useAuthStore from '@/store/authStore';
+>  7 | import s from '@/styles/dashboard.module.scss';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default function DashboardPage() {
+  10 |   const user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./app/dashboard/page.js:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./app/dashboard/page.js:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+   5 | import EventCard from '@/components/EventCard';
+   6 | import useAuthStore from '@/store/authStore';
+>  7 | import s from '@/styles/dashboard.module.scss';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default function DashboardPage() {
+  10 |   const user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  1 | import Link from 'next/link';
+> 2 | import s from '@/styles/dashboard.module.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const ACCENTS = ['coral', 'gold', 'mint', 'violet'];
+  5 |
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./app/dashboard/page.js:7:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+   5 | import EventCard from '@/components/EventCard';
+   6 | import useAuthStore from '@/store/authStore';
+>  7 | import s from '@/styles/dashboard.module.scss';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default function DashboardPage() {
+  10 |   const user = useAuthStore((state) => state.user);
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/EventCard.js:2:1
+Module not found: Can't resolve '@/styles/dashboard.module.scss'
+  1 | import Link from 'next/link';
+> 2 | import s from '@/styles/dashboard.module.scss';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const ACCENTS = ['coral', 'gold', 'mint', 'violet'];
+  5 |
+
+Import map: aliased to relative './styles/dashboard.module.scss' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./components/EventCard.js [Client Component Browser]
+    ./app/dashboard/page.js [Client Component Browser]
+    ./app/dashboard/page.js [Server Component]
+
+  Client Component SSR:
+    ./components/EventCard.js [Client Component SSR]
+    ./app/dashboard/page.js [Client Component SSR]
+    ./app/dashboard/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="dashboard/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="dashboard/...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                          <DashboardPage params={Promise} searchParams={Promise}>
+                            <div className="dashboard-...">
++                             <h1 className="dashboard-module-scss-module__1WzNXW__heading">
+-                             <section className="dashboard-module-scss-module__1WzNXW__hero">
+                              ...
+                      ...
+                    ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at h1 (<anonymous>)
+    at DashboardPage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/_0d5jhvz._.js:132:215)
+    at ClientPageRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_0z8ikg~._.js:4688:50)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="dashboard/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="dashboard/...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                          <DashboardPage params={Promise} searchParams={Promise}>
+                            <div className="dashboard-...">
++                             <h1 className="dashboard-module-scss-module__1WzNXW__heading">
+-                             <section className="dashboard-module-scss-module__1WzNXW__hero">
+                              ...
+                      ...
+                    ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at h1 (<anonymous>)
+    at DashboardPage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/_0d5jhvz._.js:132:215)
+    at ClientPageRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_0z8ikg~._.js:4688:50)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="dashboard/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="dashboard/...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+                          <DashboardPage params={Promise} searchParams={Promise}>
+                            <div className="dashboard-...">
++                             <h1 className="dashboard-module-scss-module__1WzNXW__heading">
+-                             <section className="dashboard-module-scss-module__1WzNXW__hero">
+                              ...
+                      ...
+                    ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at h1 (<anonymous>)
+    at DashboardPage (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/_0d5jhvz._.js:132:215)
+    at ClientPageRoot (file://C:/Users/Loïc/Desktop/Work/apps/event-invite/frontend/.next/dev/static/chunks/node_modules_next_dist_0z8ikg~._.js:4688:50)
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  1 | import './globals.css';
+> 2 | import PwaInstallPrompt from '@/components/PwaInstallPrompt';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: 'Sera',
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./app/layout.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./app/layout.js:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '@/components/PwaInstallPrompt'
+  [90m1 |[0m [36mimport[0m [32m'./globals.css'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m [33mPwaInstallPrompt[0m [36mfrom[0m [32m'@/components/PwaInstallPrompt'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mexport[0m [36mconst[0m metadata = {
+  [90m5 |[0m   title: [32m'Sera'[0m,
+
+Import map: aliased to relative './components/PwaInstallPrompt' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+

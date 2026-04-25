@@ -1,11 +1,18 @@
 'use client';
-import { useState, useEffect, use } from 'react';
+import { useMemo, useState, useEffect, use } from 'react';
 import Link from 'next/link';
 import api from '@/lib/api';
 import RsvpFilters from '@/components/RsvpFilters';
 import GuestItem from '@/components/GuestItem';
 import AddGuestForm from '@/components/AddGuestForm';
 import s from '@/styles/eventDetail.module.scss';
+
+const RSVP_STATS = [
+  { key: 'yes', label: 'Présents' },
+  { key: 'maybe', label: 'Peut-être' },
+  { key: 'no', label: 'Absents' },
+  { key: 'pending', label: 'En attente' },
+];
 
 export default function EventDetailPage({ params }) {
   const { id } = use(params);
@@ -24,6 +31,13 @@ export default function EventDetailPage({ params }) {
       .catch(() => {})
       .finally(() => setLoading(false));
   }, [id]);
+
+  const counts = useMemo(() => {
+    return guests.reduce((acc, guest) => {
+      acc[guest.rsvp_status] = (acc[guest.rsvp_status] || 0) + 1;
+      return acc;
+    }, { yes: 0, no: 0, maybe: 0, pending: 0 });
+  }, [guests]);
 
   const handleCopy = () => {
     const link = `${window.location.origin}/invite/${event.slug}`;
@@ -53,6 +67,9 @@ export default function EventDetailPage({ params }) {
   const date = new Date(event.date).toLocaleDateString('fr-FR', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
   });
+  const time = new Date(event.date).toLocaleTimeString('fr-FR', {
+    hour: '2-digit', minute: '2-digit',
+  });
 
   const inviteLink = `${typeof window !== 'undefined' ? window.location.origin : ''}/invite/${event.slug}`;
 
@@ -60,41 +77,62 @@ export default function EventDetailPage({ params }) {
     <div className={s.page}>
       <Link href="/dashboard" className={s.back}>← Mes événements</Link>
 
-      <div className={s.eventHeader}>
-        <h1 className={s.eventTitle}>{event.title}</h1>
-        <p className={s.eventMeta}>{date} · {event.location}</p>
-
-        <div className={s.inviteSection}>
-          <p className={s.inviteLabel}>Lien d'invitation</p>
-          <div className={s.inviteBox}>
-            <span className={s.inviteLinkDisplay}>{inviteLink}</span>
-            <button
-              className={`${s.copyBtn} ${copied ? s.copied : ''}`}
-              onClick={handleCopy}
-            >
-              {copied ? '✓ Copié' : 'Copier le lien'}
-            </button>
-          </div>
+      <section className={s.hero}>
+        <div>
+          <p className={s.kicker}>Event room</p>
+          <h1 className={s.eventTitle}>{event.title}</h1>
+          <p className={s.eventMeta}>{date} · {time} · {event.location}</p>
+          {event.description && <p className={s.description}>{event.description}</p>}
         </div>
-      </div>
+      </section>
 
-      <RsvpFilters active={filter} onChange={setFilter} />
+      <section className={s.sharePanel}>
+        <div>
+          <p className={s.panelLabel}>Lien d'invitation</p>
+        </div>
+        <div className={s.inviteBox}>
+          <span className={s.inviteLinkDisplay}>{inviteLink}</span>
+          <button
+            className={`${s.copyBtn} ${copied ? s.copied : ''}`}
+            onClick={handleCopy}
+          >
+            {copied ? '✓ Copié' : 'Copier'}
+          </button>
+        </div>
+      </section>
 
-      <p className={s.guestCount}>{filteredGuests.length} invité{filteredGuests.length !== 1 ? 's' : ''}</p>
+      <section className={s.statsGrid} aria-label="Résumé RSVP">
+        {RSVP_STATS.map((stat) => (
+          <article key={stat.key} className={`${s.statCard} ${s[stat.key]}`}>
+            <span className={s.statValue}>{counts[stat.key]}</span>
+            <span className={s.statLabel}>{stat.label}</span>
+          </article>
+        ))}
+      </section>
 
-      <div className={s.guestList}>
-        {filteredGuests.length === 0 ? (
-          <p className={s.emptyGuests}>
-            {filter === 'all' ? "Aucun invité pour l'instant." : 'Aucun invité dans cette catégorie.'}
-          </p>
-        ) : (
-          filteredGuests.map((guest) => (
-            <GuestItem key={guest.id} guest={guest} onDelete={handleDeleteGuest} />
-          ))
-        )}
-      </div>
+      <section className={s.guestPanel}>
+        <div className={s.sectionHeader}>
+          <div>
+            <p className={s.panelLabel}>Invités</p>
+            <h2>{filteredGuests.length} personne{filteredGuests.length !== 1 ? 's' : ''}</h2>
+          </div>
+          <RsvpFilters active={filter} onChange={setFilter} />
+        </div>
 
-      <AddGuestForm onAdd={handleAddGuest} />
+        <div className={s.guestList}>
+          {filteredGuests.length === 0 ? (
+            <p className={s.emptyGuests}>
+              {filter === 'all' ? "Aucun invité pour l'instant." : 'Aucun invité dans cette catégorie.'}
+            </p>
+          ) : (
+            filteredGuests.map((guest) => (
+              <GuestItem key={guest.id} guest={guest} onDelete={handleDeleteGuest} />
+            ))
+          )}
+        </div>
+
+        <AddGuestForm onAdd={handleAddGuest} />
+      </section>
     </div>
   );
 }

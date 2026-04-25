@@ -105,17 +105,9 @@
   box-shadow: var(--shadow-xs);
   backdrop-filter: blur(18px) saturate(160%);
 
-  &.coral {
-    border-top: 3px solid var(--accent);
-  }
-
-  &.mint {
-    border-top: 3px solid var(--mint);
-  }
-
-  &.violet {
-    border-top: 3px solid var(--violet);
-  }
+  &.coral .statValue { color: var(--text); }
+  &.mint .statValue { color: var(--mint); }
+  &.violet .statValue { color: var(--violet); }
 }
 
 .statValue {
