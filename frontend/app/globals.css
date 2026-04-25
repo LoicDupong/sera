@@ -8,7 +8,7 @@
   --glass-strong: rgba(255, 255, 255, 0.16);
   --glass-border: rgba(255, 255, 255, 0.14);
   --glass-border-strong: rgba(255, 255, 255, 0.24);
-  --border: rgba(255, 255, 255, 0.10);
+  --border: rgba(255, 255, 255, 0.08);
   --border-strong: rgba(255, 255, 255, 0.22);
   --text: #ffffff;
   --text-muted: rgba(255, 255, 255, 0.55);
@@ -24,7 +24,6 @@
   --violet-soft: rgba(167, 139, 250, 0.18);
   --rose: #fb7185;
   --rose-soft: rgba(251, 113, 133, 0.18);
-  --ink: #ffffff;
   --danger: #fb7185;
   --shadow-xs: 0 2px 8px rgba(0, 0, 0, 0.30);
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.35);
