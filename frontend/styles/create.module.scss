@@ -12,10 +12,12 @@
   font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 24px;
-  transition: color 0.15s;
+  font-weight: 800;
+  transition: color 0.15s, transform 0.15s;
 
   &:hover {
     color: var(--text);
+    transform: translateX(-2px);
   }
 }
 
@@ -30,6 +32,12 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding: 22px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: var(--shadow-xs);
+  backdrop-filter: blur(18px) saturate(160%);
 }
 
 .field {
@@ -45,23 +53,23 @@
 
   input,
   textarea {
-    background: var(--surface-2);
-    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--glass-border);
     border-radius: var(--radius-sm);
     padding: 12px 14px;
     color: var(--text);
     font-size: 14px;
     outline: none;
-    transition: border-color 0.15s, background 0.15s;
+    transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
 
     &:focus {
-      border-color: var(--accent);
-      background: #292929;
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
     }
 
     &::placeholder {
-      color: var(--text-muted);
-      opacity: 0.5;
+      color: rgba(255, 255, 255, 0.40);
     }
   }
 
@@ -73,17 +81,18 @@
 
 .btn {
   margin-top: 8px;
-  background: var(--accent);
-  color: #0d0d0d;
-  font-weight: 600;
+  background: #ffffff;
+  color: var(--text-on-white);
+  font-weight: 850;
   font-size: 14px;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: 999px;
   padding: 13px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   transition: background 0.15s, opacity 0.15s, transform 0.15s;
 
   &:hover {
-    background: var(--accent-hover);
+    background: rgba(255, 255, 255, 0.90);
     transform: translateY(-1px);
   }
 
@@ -102,8 +111,8 @@
 .error {
   font-size: 13px;
   color: var(--danger);
-  background: rgba(224, 92, 92, 0.08);
-  border: 1px solid rgba(224, 92, 92, 0.2);
+  background: rgba(251, 113, 133, 0.12);
+  border: 1px solid rgba(251, 113, 133, 0.25);
   border-radius: var(--radius-sm);
   padding: 10px 12px;
 }
