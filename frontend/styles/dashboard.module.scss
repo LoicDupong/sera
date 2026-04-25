@@ -1,26 +1,197 @@
 .page {
-  padding: 24px 20px 100px;
-  max-width: 600px;
+  width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
+  padding: 30px 0 96px;
   animation: fadeUp 0.24s var(--ease) both;
 }
 
-.heading {
-  font-size: 22px;
-  font-weight: 700;
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 24px;
+  padding: 32px;
+  margin-bottom: 18px;
   color: var(--text);
-  margin-bottom: 24px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px) saturate(160%);
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, transparent 60%);
+  }
+}
+
+.heroCopy {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+
+.kicker {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.heading {
+  max-width: 720px;
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 0.96;
+  font-weight: 850;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.subheading {
+  max-width: 520px;
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.primaryAction,
+.emptyBtn {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 18px;
+  background: #ffffff;
+  color: var(--text-on-white);
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: background 0.16s, box-shadow 0.16s, transform 0.16s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.30);
+    transform: translateY(-2px);
+  }
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 112px;
+  padding: 18px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  box-shadow: var(--shadow-xs);
+  backdrop-filter: blur(18px) saturate(160%);
+
+  &.coral {
+    border-top: 3px solid var(--accent);
+  }
+
+  &.mint {
+    border-top: 3px solid var(--mint);
+  }
+
+  &.violet {
+    border-top: 3px solid var(--violet);
+  }
+}
+
+.statValue {
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 850;
+  color: var(--text);
+}
+
+.statLabel {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nextStrip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 13px 18px;
+  margin-bottom: 26px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  color: var(--text);
+  box-shadow: var(--shadow-xs);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+
+.nextLabel {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.eventsSection {
+  padding: 22px;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 26px;
+  box-shadow: var(--shadow-xs);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+
+  h2 {
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+
+  span {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 700;
+  }
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 12px;
 }
 
 .empty {
   text-align: center;
-  padding: 60px 20px;
+  padding: 58px 20px;
   color: var(--text-muted);
 
   p {
@@ -29,114 +200,159 @@
   }
 }
 
-.emptyBtn {
-  display: inline-block;
-  background: var(--accent);
-  color: #0d0d0d;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 12px 24px;
-  border-radius: var(--radius-sm);
-  transition: background 0.15s, transform 0.15s;
-
-  &:hover {
-    background: var(--accent-hover);
-    transform: translateY(-1px);
-  }
-}
-
 .loading {
   color: var(--text-muted);
   font-size: 14px;
-  padding: 40px 0;
+  padding: 36px 0;
   text-align: center;
 }
 
-.fab {
-  position: fixed;
-  bottom: 28px;
-  right: 20px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--accent);
-  color: #0d0d0d;
-  font-size: 28px;
-  font-weight: 300;
-  display: flex;
+.card {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: center;
-  line-height: 1;
-  box-shadow: 0 4px 16px rgba(201, 169, 110, 0.3);
-  transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+  gap: 16px;
+  min-height: 92px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 14px 16px;
+  backdrop-filter: blur(14px) saturate(160%);
+  transition: background 0.16s, border-color 0.16s, box-shadow 0.16s, transform 0.16s;
 
   &:hover {
-    background: var(--accent-hover);
-    transform: scale(1.05);
-    box-shadow: 0 8px 24px rgba(201, 169, 110, 0.35);
+    background: var(--glass-strong);
+    border-color: var(--glass-border-strong);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.30);
+    transform: translateY(-2px);
+  }
+
+  &.coral .cardDate {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  &.gold .cardDate {
+    background: var(--gold-soft);
+    color: var(--gold);
+  }
+
+  &.mint .cardDate {
+    background: var(--mint-soft);
+    color: var(--mint);
+  }
+
+  &.violet .cardDate {
+    background: var(--violet-soft);
+    color: var(--violet);
   }
 }
 
-/* EventCard styles */
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--radius);
-  padding: 16px 18px;
-  transition: background 0.15s, border-color 0.15s, transform 0.15s;
-  gap: 12px;
+.cardDate {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  text-transform: uppercase;
 
-  &:hover {
-    background: var(--surface-2);
-    border-color: #3a3a3a;
-    transform: translateY(-1px);
+  span {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 850;
+  }
+
+  small {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
   }
 }
 
 .cardBody {
-  flex: 1;
   min-width: 0;
 }
 
 .cardTitle {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 800;
   color: var(--text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.cardMeta {
+.cardMeta,
+.cardLocation {
   font-size: 13px;
   color: var(--text-muted);
-  margin-top: 4px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.cardLocation {
+  margin-top: 2px;
+}
+
 .cardArrow {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.10);
   color: var(--text-muted);
-  font-size: 18px;
+  font-size: 24px;
   flex-shrink: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 760px) {
   .page {
-    padding: 20px 16px 96px;
+    width: min(100% - 28px, 680px);
+    padding-top: 18px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+
+  .primaryAction {
+    width: 100%;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    border-radius: 24px;
+  }
+
+  .heading {
+    font-size: 34px;
+  }
+
+  .eventsSection {
+    padding: 16px;
+    border-radius: 22px;
   }
 
   .card {
-    padding: 14px 15px;
+    grid-template-columns: 54px minmax(0, 1fr);
+    gap: 12px;
   }
 
-  .fab {
-    right: 16px;
-    bottom: 20px;
+  .cardDate {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+  }
+
+  .cardArrow {
+    display: none;
   }
 }
