@@ -1,0 +1,31 @@
+{
+  "name": "Sera",
+  "short_name": "Sera",
+  "description": "Gère tes invitations d'événements en un seul endroit.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#0d0d0d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Mes événements",
+      "short_name": "Événements",
+      "url": "/dashboard"
+    },
+    {
+      "name": "Nouvel événement",
+      "short_name": "Créer",
+      "url": "/dashboard/create"
+    }
+  ]
+}

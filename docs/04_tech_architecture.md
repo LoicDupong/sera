@@ -1,13 +1,19 @@
 # 04 — Tech Architecture
 
 ## Frontend
-[TO FILL]
+Next.js App Router + SCSS Modules — PWA (manifest + service worker)
 
 ## Backend
-[TO FILL]
+Express + REST API
 
 ## Database
-[TO FILL]
+PostgreSQL + Sequelize
 
-## High-level flow
-[TO FILL]
+## Auth
+JWT + argon2 (host uniquement — les guests n'ont pas de compte)
+
+## State
+Zustand
+
+## Stack confirmé
+Default stack — aucun changement.

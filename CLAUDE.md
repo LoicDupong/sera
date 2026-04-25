@@ -38,10 +38,10 @@ You are a senior fullstack engineer working in iterative MVP mode.
 - API: REST
 
 ## Project-specific inputs
-- Project name: [TO FILL]
-- Concept: [TO FILL]
-- Target users: [TO FILL]
-- Core problem: [TO FILL]
-- MVP scope: [TO FILL]
-- Nice-to-have: [TO FILL]
+- Project name: Sera
+- Concept: App de gestion d'événements permettant à un host de créer un event, gérer sa liste d'invités et envoyer un lien pour que les invités puissent répondre facilement
+- Target users: Particuliers (tous âges) qui organisent des événements privés entre amis — anniversaires, soirées, réunions
+- Core problem: Gérer les invitations d'un événement privé est éparpillé (SMS, WhatsApp, etc.) — Sera centralise tout : liste d'invités, RSVP par lien, et dashboard clair pour tracker les réponses
+- MVP scope: Auth host, création d'event, guest list manuelle, lien privé, accès guest sans compte, vérification nom/prénom avant RSVP, RSVP yes/no/maybe, dashboard avec filtres, push notification host, PWA installable
+- Nice-to-have: Plus-one, import CSV, QR check-in, co-hosts, templates personnalisables, rappels automatiques
 - Constraints: solo dev, short timeframe, demoable app

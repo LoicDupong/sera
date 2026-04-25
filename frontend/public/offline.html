@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <title>Sera - Hors ligne</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0d0d0d;
+        --surface: #1a1a1a;
+        --border: #2e2e2e;
+        --text: #f0f0f0;
+        --text-muted: #888;
+        --accent: #c9a96e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      main {
+        width: min(100%, 420px);
+        padding: 24px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+
+      p:first-child {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 1.15;
+      }
+
+      p:last-child {
+        margin: 0;
+        color: var(--text-muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Sera</p>
+      <h1>Tu es hors ligne</h1>
+      <p>Reconnecte-toi pour charger tes événements et envoyer les réponses RSVP.</p>
+    </main>
+  </body>
+</html>
