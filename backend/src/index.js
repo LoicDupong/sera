@@ -31,6 +31,12 @@ app.use('/api/push', require('./routes/push'));
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
+// Express error-handling middleware — must be registered after all routes
+app.use((err, req, res, next) => {
+  console.error('[Express error]', err);
+  res.status(err.status || 500).json({ error: err.message || 'Internal server error' });
+});
+
 const PORT = process.env.PORT || 4000;
 
 sequelize.sync().then(() => {
@@ -38,4 +44,15 @@ sequelize.sync().then(() => {
 }).catch((err) => {
   console.error('DB connection failed:', err.message);
   process.exit(1);
+});
+
+// Catch synchronous exceptions that escaped all other error handling
+process.on('uncaughtException', (err) => {
+  console.error('[uncaughtException]', err);
+  process.exit(1);
+});
+
+// Catch rejected promises that were never handled
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('[unhandledRejection] at:', promise, 'reason:', reason);
 });
