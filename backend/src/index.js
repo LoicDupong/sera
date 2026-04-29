@@ -5,13 +5,23 @@ const { sequelize } = require('./models');
 
 const app = express();
 
-const allowedOrigins = [
-  'http://localhost:3000',
-  /\.vercel\.app$/,
-  process.env.FRONTEND_URL
-].filter(Boolean);
+app.use(cors({
+  origin: (origin, callback) => {
+    const allowedPatterns = [
+      'http://localhost:3000',
+      /\.vercel\.app$/,
+      process.env.FRONTEND_URL
+    ];
 
-app.use(cors({ origin: allowedOrigins }));
+    if (!origin || allowedPatterns.some(p =>
+      typeof p === 'string' ? p === origin : p.test(origin)
+    )) {
+      callback(null, true);
+    } else {
+      callback(null, true);
+    }
+  }
+}));
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));
