@@ -12,14 +12,14 @@ const useAuthStore = create((set) => ({
   },
 
   login: async (email, password) => {
-    const { data } = await api.post('/auth/login', { email, password });
+    const { data } = await api.post('/api/auth/login', { email, password });
     localStorage.setItem('token', data.token);
     localStorage.setItem('user', JSON.stringify(data.user));
     set({ token: data.token, user: data.user });
   },
 
   register: async (email, password, name) => {
-    const { data } = await api.post('/auth/register', { email, password, name });
+    const { data } = await api.post('/api/auth/register', { email, password, name });
     localStorage.setItem('token', data.token);
     localStorage.setItem('user', JSON.stringify(data.user));
     set({ token: data.token, user: data.user });
