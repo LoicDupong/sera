@@ -4,7 +4,10 @@
       "Bash(netstat -ano)",
       "Bash(awk '{print $5}')",
       "Bash(python -m json.tool)",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
