@@ -8,10 +8,12 @@ const TABS = [
   { key: 'pending', label: 'En attente' },
 ];
 
-export default function RsvpFilters({ active, onChange }) {
+export default function RsvpFilters({ active, onChange, hideStatuses = [] }) {
+  const filteredTabs = TABS.filter((tab) => !hideStatuses.includes(tab.key));
+
   return (
     <div className={s.filters}>
-      {TABS.map((tab) => (
+      {filteredTabs.map((tab) => (
         <button
           key={tab.key}
           className={`${s.filterTab} ${active === tab.key ? s.active : ''}`}
