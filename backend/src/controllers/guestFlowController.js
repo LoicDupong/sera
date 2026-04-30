@@ -7,7 +7,7 @@ const normalize = (str) =>
 const getEventBySlug = async (req, res) => {
   const event = await Event.findOne({
     where: { slug: req.params.slug },
-    attributes: ['id', 'title', 'description', 'date', 'location', 'slug'],
+    attributes: ['id', 'title', 'description', 'date', 'location', 'slug', 'event_type'],
   });
   if (!event) return res.status(404).json({ error: 'Event introuvable' });
   res.json(event);
@@ -21,11 +21,48 @@ const verifyGuest = async (req, res) => {
   const event = await Event.findOne({ where: { slug: req.params.slug } });
   if (!event) return res.status(404).json({ error: 'Event introuvable' });
 
-  const guests = await Guest.findAll({ where: { event_id: event.id } });
+  // For open events: auto-create guest or return existing
+  if (event.event_type === 'open') {
+    const inputFirst = normalize(first_name);
+    const inputLast = normalize(last_name);
 
+    // Look for existing guest
+    const allGuests = await Guest.findAll({
+      where: { event_id: event.id },
+      attributes: ['id', 'first_name', 'last_name', 'rsvp_status'],
+    });
+
+    const existingGuest = allGuests.find(
+      (g) => normalize(g.first_name) === inputFirst && normalize(g.last_name) === inputLast
+    );
+
+    if (existingGuest) {
+      return res.json({
+        found: true,
+        guest_id: existingGuest.id,
+        rsvp_status: existingGuest.rsvp_status,
+      });
+    }
+
+    // Create new guest (auto-join with yes status)
+    const newGuest = await Guest.create({
+      event_id: event.id,
+      first_name: first_name.trim(),
+      last_name: last_name.trim(),
+      rsvp_status: 'yes',
+    });
+
+    return res.json({
+      found: true,
+      guest_id: newGuest.id,
+      rsvp_status: newGuest.rsvp_status,
+    });
+  }
+
+  // For private events: existing logic
+  const guests = await Guest.findAll({ where: { event_id: event.id } });
   const inputFirst = normalize(first_name);
   const inputLast = normalize(last_name);
-
   const guest = guests.find(
     (g) => normalize(g.first_name) === inputFirst && normalize(g.last_name) === inputLast
   );
