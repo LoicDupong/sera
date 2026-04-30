@@ -5,6 +5,8 @@ import api from '@/lib/api';
 import RsvpFilters from '@/components/RsvpFilters';
 import GuestItem from '@/components/GuestItem';
 import AddGuestForm from '@/components/AddGuestForm';
+import OpenEventDashboard from '@/components/OpenEventDashboard';
+import BulkGuestImporter from '@/components/BulkGuestImporter';
 import s from '@/styles/eventDetail.module.scss';
 
 const RSVP_STATS = [
@@ -21,6 +23,7 @@ export default function EventDetailPage({ params }) {
   const [filter, setFilter] = useState('all');
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
+  const [showBulkImport, setShowBulkImport] = useState(false);
 
   useEffect(() => {
     api.get(`/events/${id}`)
@@ -55,6 +58,16 @@ export default function EventDetailPage({ params }) {
   const handleDeleteGuest = async (guestId) => {
     await api.delete(`/events/${id}/guests/${guestId}`);
     setGuests((prev) => prev.filter((g) => g.id !== guestId));
+  };
+
+  const handleBulkImport = async (guests) => {
+    try {
+      const { data } = await api.post(`/events/${id}/guests/bulk`, { guests });
+      setGuests((prev) => [...prev, ...data.createdGuests]);
+      setShowBulkImport(false);
+    } catch (err) {
+      console.error('Erreur lors de l\'importation', err);
+    }
   };
 
   const filteredGuests = filter === 'all'
@@ -101,38 +114,65 @@ export default function EventDetailPage({ params }) {
         </div>
       </section>
 
-      <section className={s.statsGrid} aria-label="Résumé RSVP">
-        {RSVP_STATS.map((stat) => (
-          <article key={stat.key} className={`${s.statCard} ${s[stat.key]}`}>
-            <span className={s.statValue}>{counts[stat.key]}</span>
-            <span className={s.statLabel}>{stat.label}</span>
-          </article>
-        ))}
-      </section>
+      {event.event_type === 'open' ? (
+        <OpenEventDashboard
+          guests={guests}
+          filter={filter}
+          onFilterChange={setFilter}
+          onDeleteGuest={handleDeleteGuest}
+        />
+      ) : (
+        <>
+          <section className={s.statsGrid} aria-label="Résumé RSVP">
+            {RSVP_STATS.map((stat) => (
+              <article key={stat.key} className={`${s.statCard} ${s[stat.key]}`}>
+                <span className={s.statValue}>{counts[stat.key]}</span>
+                <span className={s.statLabel}>{stat.label}</span>
+              </article>
+            ))}
+          </section>
 
-      <section className={s.guestPanel}>
-        <div className={s.sectionHeader}>
-          <div>
-            <p className={s.panelLabel}>Invités</p>
-            <h2>{filteredGuests.length} personne{filteredGuests.length !== 1 ? 's' : ''}</h2>
-          </div>
-          <RsvpFilters active={filter} onChange={setFilter} />
-        </div>
+          <section className={s.guestPanel}>
+            <div className={s.sectionHeader}>
+              <div>
+                <p className={s.panelLabel}>Invités</p>
+                <h2>{filteredGuests.length} personne{filteredGuests.length !== 1 ? 's' : ''}</h2>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <RsvpFilters active={filter} onChange={setFilter} />
+                <button
+                  className={s.filterTab}
+                  onClick={() => setShowBulkImport(!showBulkImport)}
+                  title="Importer des invités en masse"
+                >
+                  ↓ Importer
+                </button>
+              </div>
+            </div>
 
-        <div className={s.guestList}>
-          {filteredGuests.length === 0 ? (
-            <p className={s.emptyGuests}>
-              {filter === 'all' ? "Aucun invité pour l'instant." : 'Aucun invité dans cette catégorie.'}
-            </p>
-          ) : (
-            filteredGuests.map((guest) => (
-              <GuestItem key={guest.id} guest={guest} onDelete={handleDeleteGuest} />
-            ))
-          )}
-        </div>
+            {showBulkImport && (
+              <BulkGuestImporter
+                onImport={handleBulkImport}
+                onCancel={() => setShowBulkImport(false)}
+              />
+            )}
 
-        <AddGuestForm onAdd={handleAddGuest} />
-      </section>
+            <div className={s.guestList}>
+              {filteredGuests.length === 0 ? (
+                <p className={s.emptyGuests}>
+                  {filter === 'all' ? "Aucun invité pour l'instant." : 'Aucun invité dans cette catégorie.'}
+                </p>
+              ) : (
+                filteredGuests.map((guest) => (
+                  <GuestItem key={guest.id} guest={guest} onDelete={handleDeleteGuest} />
+                ))
+              )}
+            </div>
+
+            <AddGuestForm onAdd={handleAddGuest} />
+          </section>
+        </>
+      )}
     </div>
   );
 }
