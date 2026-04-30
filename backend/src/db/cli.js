@@ -1,27 +1,61 @@
+const fs = require('fs');
 const path = require('path');
 const sequelize = require('../config/database');
+const { QueryTypes } = require('sequelize');
 
-const migrationsPath = path.join(__dirname, 'migrations');
-const fs = require('fs');
-
-async function migrate() {
+async function runMigrations() {
   try {
+    // Ensure migration metadata table exists
+    await sequelize.query(`
+      CREATE TABLE IF NOT EXISTS "SequelizeMeta" (
+        "name" VARCHAR(255) PRIMARY KEY,
+        "createdAt" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+      );
+    `);
+
     // Get all migration files
-    const migrationFiles = fs.readdirSync(migrationsPath).filter(f => f.endsWith('.js')).sort();
+    const migrationsDir = path.join(__dirname, 'migrations');
+    const migrationFiles = fs
+      .readdirSync(migrationsDir)
+      .filter(f => f.endsWith('.js'))
+      .sort();
 
-    console.log('Running migrations...');
+    // Get already-executed migrations
+    const executedMigrations = await sequelize.query(
+      'SELECT name FROM "SequelizeMeta" ORDER BY name;',
+      { type: QueryTypes.SELECT }
+    );
+    const executedNames = executedMigrations.map(m => m.name);
 
+    console.log('Running migrations...\n');
+
+    // Run pending migrations
     for (const file of migrationFiles) {
-      const migration = require(path.join(migrationsPath, file));
-      console.log(`Executing: ${file}`);
-      await migration.up(sequelize.getQueryInterface(), sequelize.Sequelize);
-      console.log(`✓ ${file} completed`);
+      if (executedNames.includes(file)) {
+        console.log(`✓ ${file} (already applied)`);
+        continue;
+      }
+
+      const migration = require(path.join(migrationsDir, file));
+
+      try {
+        console.log(`→ Running ${file}...`);
+        await migration.up(sequelize.getQueryInterface(), sequelize.Sequelize);
+        await sequelize.query(
+          'INSERT INTO "SequelizeMeta" (name) VALUES (?)',
+          { replacements: [file], type: QueryTypes.INSERT }
+        );
+        console.log(`✓ ${file} completed`);
+      } catch (err) {
+        console.error(`✗ ${file} failed:`, err.message);
+        process.exit(1);
+      }
     }
 
-    console.log('\nAll migrations completed successfully!');
+    console.log('\n✓ All migrations complete');
     process.exit(0);
-  } catch (error) {
-    console.error('Migration failed:', error);
+  } catch (err) {
+    console.error('Migration error:', err.message);
     process.exit(1);
   }
 }
@@ -29,7 +63,7 @@ async function migrate() {
 const command = process.argv[2];
 
 if (command === 'migrate') {
-  migrate();
+  runMigrations();
 } else {
   console.error('Unknown command:', command);
   process.exit(1);
