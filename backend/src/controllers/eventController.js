@@ -57,4 +57,52 @@ const remove = async (req, res) => {
   res.status(204).send();
 };
 
-module.exports = { create, list, getOne, update, remove };
+const bulkAddGuests = async (req, res) => {
+  const { guests } = req.body;
+  if (!Array.isArray(guests) || guests.length === 0) {
+    return res.status(400).json({ error: 'guests array requis et non vide' });
+  }
+
+  const event = await Event.findOne({
+    where: { id: req.params.id, host_id: req.user.id },
+  });
+  if (!event) return res.status(404).json({ error: 'Event introuvable' });
+  if (event.event_type === 'open') {
+    return res.status(400).json({ error: "Impossible d'ajouter des invités à un événement ouvert" });
+  }
+
+  const errors = [];
+  const created = [];
+
+  for (const guest of guests) {
+    const { first_name, last_name } = guest;
+    if (!first_name || !last_name) {
+      errors.push(`Prénom et nom requis pour: ${first_name || '?'} ${last_name || '?'}`);
+      continue;
+    }
+
+    try {
+      const newGuest = await Guest.create({
+        event_id: event.id,
+        first_name,
+        last_name,
+        rsvp_status: 'pending',
+      });
+      created.push(newGuest);
+    } catch (error) {
+      if (error.name === 'SequelizeUniqueConstraintError') {
+        errors.push(`${first_name} ${last_name} existe déjà`);
+      } else {
+        errors.push(`Erreur lors de l'ajout de ${first_name} ${last_name}`);
+      }
+    }
+  }
+
+  res.status(201).json({
+    created: created.length,
+    createdGuests: created,
+    errors: errors.length > 0 ? errors : undefined,
+  });
+};
+
+module.exports = { create, list, getOne, update, remove, bulkAddGuests };
