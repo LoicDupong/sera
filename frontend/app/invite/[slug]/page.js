@@ -16,6 +16,12 @@ const CONFIRMATION_COPY = {
   no: 'Merci pour ta réponse, ton absence est bien notée.',
 };
 
+const CONFIRMATION_COPY_OPEN = {
+  yes: 'Super, tu es inscrit! On te voit bientôt.',
+  maybe: "C'est noté, tu es indiqué comme peut-être.",
+  no: 'Merci pour ta réponse, ton absence est bien notée.',
+};
+
 export default function InvitePage({ params }) {
   const { slug } = use(params);
   const [event, setEvent] = useState(null);
@@ -71,7 +77,13 @@ export default function InvitePage({ params }) {
 
       setGuest({ id: data.guest_id, rsvp_status: data.rsvp_status });
       setSelectedRsvp(data.rsvp_status === 'pending' ? '' : data.rsvp_status);
-      setStep('rsvp');
+
+      // For open events: skip RSVP step and go directly to confirmation
+      if (event?.event_type === 'open' && data.rsvp_status === 'yes') {
+        setStep('done');
+      } else {
+        setStep('rsvp');
+      }
     } catch (err) {
       setError(err.response?.data?.error || "Impossible de vérifier l'invitation.");
     } finally {
@@ -210,7 +222,11 @@ export default function InvitePage({ params }) {
             <p className={s.stepLabel}>Confirmation</p>
             <h2>Merci, {identity.first_name}</h2>
           </div>
-          <p className={s.confirmation}>{CONFIRMATION_COPY[guest?.rsvp_status] || 'Ta réponse est bien enregistrée.'}</p>
+          <p className={s.confirmation}>
+            {event?.event_type === 'open'
+              ? CONFIRMATION_COPY_OPEN[guest?.rsvp_status] || 'Ta réponse est bien enregistrée.'
+              : CONFIRMATION_COPY[guest?.rsvp_status] || 'Ta réponse est bien enregistrée.'}
+          </p>
         </section>
       )}
     </main>
