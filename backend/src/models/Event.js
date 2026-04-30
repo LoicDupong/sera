@@ -27,6 +27,11 @@ const Event = sequelize.define('Event', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  event_type: {
+    type: DataTypes.ENUM('private', 'open'),
+    defaultValue: 'private',
+    allowNull: false,
+  },
   slug: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,
