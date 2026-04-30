@@ -1,11 +1,27 @@
 const { Event, Guest } = require('../models');
 
 const create = async (req, res) => {
-  const { title, description, date, location } = req.body;
+  const { title, description, date, location, event_type } = req.body;
+
+  // Validate required fields
   if (!title || !date || !location) {
     return res.status(400).json({ error: 'title, date et location sont requis' });
   }
-  const event = await Event.create({ host_id: req.user.id, title, description, date, location });
+
+  // Validate event_type if provided
+  if (event_type && !['private', 'open'].includes(event_type)) {
+    return res.status(400).json({ error: 'event_type invalide (private ou open)' });
+  }
+
+  const event = await Event.create({
+    host_id: req.user.id,
+    title,
+    description,
+    date,
+    location,
+    event_type: event_type || 'private',
+  });
+
   res.status(201).json(event);
 };
 
