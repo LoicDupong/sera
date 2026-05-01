@@ -77,11 +77,60 @@ const getOne = async (req, res) => {
 };
 
 const update = async (req, res) => {
-  const event = await Event.findOne({ where: { id: req.params.id, host_id: req.user.id } });
-  if (!event) return res.status(404).json({ error: 'Event introuvable' });
-  const { title, description, date, location } = req.body;
-  await event.update({ title, description, date, location });
-  res.json(event);
+  const { id } = req.params;
+  const {
+    title,
+    description,
+    date,
+    location,
+    theme,
+    cover_type,
+    cover_value,
+    custom_message,
+  } = req.body;
+
+  try {
+    // Check ownership
+    const event = await Event.findOne({
+      where: { id, host_id: req.user.id },
+    });
+
+    if (!event) {
+      return res.status(404).json({ error: 'Event introuvable' });
+    }
+
+    // Validate fields if provided
+    if (theme) {
+      const validThemes = ['birthday', 'wedding', 'baby_shower', 'bbq', 'house_party', 'chill_night', 'corporate', 'minimal'];
+      if (!validThemes.includes(theme)) {
+        return res.status(400).json({ error: 'Invalid theme' });
+      }
+    }
+
+    if (cover_type && !['gradient', 'image'].includes(cover_type)) {
+      return res.status(400).json({ error: 'cover_type must be gradient or image' });
+    }
+
+    if (custom_message && custom_message.length > 160) {
+      return res.status(400).json({ error: 'custom_message must be 160 characters or less' });
+    }
+
+    // Update event with only provided fields
+    const updates = {};
+    if (title !== undefined) updates.title = title;
+    if (description !== undefined) updates.description = description;
+    if (date !== undefined) updates.date = date;
+    if (location !== undefined) updates.location = location;
+    if (theme !== undefined) updates.theme = theme;
+    if (cover_type !== undefined) updates.cover_type = cover_type;
+    if (cover_value !== undefined) updates.cover_value = cover_value;
+    if (custom_message !== undefined) updates.custom_message = custom_message ? custom_message.trim() : null;
+
+    await event.update(updates);
+    res.json(event);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to update event' });
+  }
 };
 
 const remove = async (req, res) => {

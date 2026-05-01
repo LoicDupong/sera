@@ -8,7 +8,7 @@ router.use(auth);
 router.post('/', create);
 router.get('/', list);
 router.get('/:id', getOne);
-router.put('/:id', update);
+router.patch('/:id', update);
 router.delete('/:id', remove);
 
 router.post('/:id/guests', addGuest);
