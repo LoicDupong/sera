@@ -1,4 +1,5 @@
 const { Event, Guest } = require('../models');
+const { validateImageFile, processAndSaveImage } = require('../utils/imageProcessor');
 
 const create = async (req, res) => {
   const {
@@ -188,4 +189,46 @@ const bulkAddGuests = async (req, res) => {
   });
 };
 
-module.exports = { create, list, getOne, update, remove, bulkAddGuests };
+const uploadCover = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    // Validate event ownership
+    const event = await Event.findOne({
+      where: { id, host_id: req.user.id },
+    });
+
+    if (!event) {
+      return res.status(404).json({ error: 'Event not found' });
+    }
+
+    // Check if file exists
+    if (!req.file) {
+      return res.status(400).json({ error: 'No file uploaded' });
+    }
+
+    // Validate image
+    const { valid, errors } = validateImageFile(req.file.buffer, req.file.mimetype);
+    if (!valid) {
+      return res.status(400).json({ error: errors.join(', ') });
+    }
+
+    // Process and save image
+    const coverUrl = await processAndSaveImage(req.file.buffer, id);
+
+    // Update event
+    await event.update({
+      cover_type: 'image',
+      cover_value: coverUrl,
+    });
+
+    res.json({
+      success: true,
+      cover_value: coverUrl,
+    });
+  } catch (error) {
+    res.status(500).json({ error: `Failed to upload cover: ${error.message}` });
+  }
+};
+
+module.exports = { create, list, getOne, update, remove, bulkAddGuests, uploadCover };
