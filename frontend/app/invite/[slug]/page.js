@@ -68,7 +68,12 @@ export default function InvitePage({ params }) {
     setSubmitting(true);
 
     try {
-      const { data } = await api.post(`/invite/${slug}/verify`, identity);
+      const payload = {
+        ...identity,
+        ...(event?.event_type === 'open' && { rsvp_status: selectedRsvp }),
+      };
+
+      const { data } = await api.post(`/invite/${slug}/verify`, payload);
 
       if (!data.found) {
         setError("On n'a pas retrouvé cette invitation. Vérifie le prénom et le nom indiqués par l'hôte.");
@@ -79,7 +84,7 @@ export default function InvitePage({ params }) {
       setSelectedRsvp(data.rsvp_status === 'pending' ? '' : data.rsvp_status);
 
       // For open events: skip RSVP step and go directly to confirmation
-      if (event?.event_type === 'open' && data.rsvp_status === 'yes') {
+      if (event?.event_type === 'open') {
         setStep('done');
       } else {
         setStep('rsvp');
@@ -148,7 +153,7 @@ export default function InvitePage({ params }) {
       {step === 'verify' && (
         <form className={s.panel} onSubmit={handleVerify}>
           <div className={s.stepHeader}>
-          <p className={s.stepLabel}>Vérification</p>
+            <p className={s.stepLabel}>Vérification</p>
             <h2>Entre ton nom</h2>
           </div>
 
@@ -180,9 +185,33 @@ export default function InvitePage({ params }) {
             </label>
           </div>
 
+          {event?.event_type === 'open' && (
+            <>
+              <div className={s.rsvpSection}>
+                <p className={s.rsvpLabel}>Ta réponse</p>
+                <div className={s.options}>
+                  {RSVP_OPTIONS.map((option) => (
+                    <button
+                      key={option.value}
+                      type="button"
+                      className={`${s.optionBtn} ${s[option.tone]} ${selectedRsvp === option.value ? s.active : ''}`}
+                      onClick={() => setSelectedRsvp(option.value)}
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
+
           {error && <p className={s.error}>{error}</p>}
 
-          <button className={s.primaryBtn} type="submit" disabled={submitting}>
+          <button
+            className={s.primaryBtn}
+            type="submit"
+            disabled={submitting || (event?.event_type === 'open' && !selectedRsvp)}
+          >
             {submitting ? 'Vérification...' : 'Continuer'}
           </button>
         </form>
