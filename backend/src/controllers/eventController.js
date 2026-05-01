@@ -1,28 +1,62 @@
 const { Event, Guest } = require('../models');
 
 const create = async (req, res) => {
-  const { title, description, date, location, event_type } = req.body;
-
-  // Validate required fields
-  if (!title || !date || !location) {
-    return res.status(400).json({ error: 'title, date et location sont requis' });
-  }
-
-  // Validate event_type if provided
-  if (event_type && !['private', 'open'].includes(event_type)) {
-    return res.status(400).json({ error: 'event_type invalide (private ou open)' });
-  }
-
-  const event = await Event.create({
-    host_id: req.user.id,
+  const {
     title,
     description,
     date,
     location,
-    event_type: event_type || 'private',
-  });
+    event_type,
+    theme,
+    cover_type,
+    cover_value,
+    custom_message,
+  } = req.body;
 
-  res.status(201).json(event);
+  // Validate required fields
+  if (!title || !date || !location) {
+    return res.status(400).json({ error: 'title, date, and location are required' });
+  }
+
+  // Validate event_type
+  if (event_type && !['private', 'open'].includes(event_type)) {
+    return res.status(400).json({ error: 'event_type must be private or open' });
+  }
+
+  // Validate theme
+  const validThemes = ['birthday', 'wedding', 'baby_shower', 'bbq', 'house_party', 'chill_night', 'corporate', 'minimal'];
+  if (theme && !validThemes.includes(theme)) {
+    return res.status(400).json({ error: 'Invalid theme' });
+  }
+
+  // Validate cover_type
+  if (cover_type && !['gradient', 'image'].includes(cover_type)) {
+    return res.status(400).json({ error: 'cover_type must be gradient or image' });
+  }
+
+  // Validate custom_message length
+  if (custom_message && custom_message.length > 160) {
+    return res.status(400).json({ error: 'custom_message must be 160 characters or less' });
+  }
+
+  try {
+    const event = await Event.create({
+      host_id: req.user.id,
+      title,
+      description: description || null,
+      date,
+      location,
+      event_type: event_type || 'private',
+      theme: theme || 'minimal',
+      cover_type: cover_type || 'gradient',
+      cover_value: cover_value || `${theme || 'minimal'}_default`,
+      custom_message: custom_message ? custom_message.trim() : null,
+    });
+
+    res.status(201).json(event);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to create event' });
+  }
 };
 
 const list = async (req, res) => {
