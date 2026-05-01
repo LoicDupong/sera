@@ -110,6 +110,20 @@
   gap: 10px;
 }
 
+.rsvpSection {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.rsvpLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  display: block;
+}
+
 .optionBtn {
   width: 100%;
   min-height: 48px;
