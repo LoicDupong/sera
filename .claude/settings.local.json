@@ -22,7 +22,8 @@
       "Bash(npm run *)",
       "Bash(grep -E \"#[0-9a-f]{3,6}|rgba\\\\\\([0-9]|rgb\\\\\\(\" frontend/styles/eventTypeSelector.module.scss)",
       "Bash(node -e \"const migration = require\\('./src/db/migrations/002_add_customization_columns.js'\\); console.log\\('Migration loaded successfully'\\); console.log\\('Has up method:', typeof migration.up === 'function'\\); console.log\\('Has down method:', typeof migration.down === 'function'\\);\")",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(curl -s http://localhost:4000/health)"
     ]
   }
 }

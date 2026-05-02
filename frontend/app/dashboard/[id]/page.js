@@ -7,6 +7,7 @@ import GuestItem from '@/components/GuestItem';
 import AddGuestForm from '@/components/AddGuestForm';
 import OpenEventDashboard from '@/components/OpenEventDashboard';
 import BulkGuestImporter from '@/components/BulkGuestImporter';
+import EventCustomization from '@/components/EventCustomization';
 import s from '@/styles/eventDetail.module.scss';
 
 const RSVP_STATS = [
@@ -24,12 +25,21 @@ export default function EventDetailPage({ params }) {
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
   const [showBulkImport, setShowBulkImport] = useState(false);
+  const [customization, setCustomization] = useState({});
+  const [customizationSaving, setCustomizationSaving] = useState(false);
+  const [customizationFeedback, setCustomizationFeedback] = useState('');
 
   useEffect(() => {
     api.get(`/events/${id}`)
       .then(({ data }) => {
         setEvent(data);
         setGuests(data.guests ?? []);
+        setCustomization({
+          theme: data.theme || 'minimal',
+          cover_type: data.cover_type || 'gradient',
+          cover_value: data.cover_value || 'mint_default',
+          custom_message: data.custom_message || '',
+        });
       })
       .catch(() => {})
       .finally(() => setLoading(false));
@@ -67,6 +77,42 @@ export default function EventDetailPage({ params }) {
       setShowBulkImport(false);
     } catch (err) {
       console.error('Erreur lors de l\'importation', err);
+    }
+  };
+
+  const handleUpdateCustomization = async () => {
+    setCustomizationSaving(true);
+    setCustomizationFeedback('');
+    try {
+      const { data } = await api.patch(`/events/${id}`, {
+        theme: customization.theme,
+        cover_type: customization.cover_type,
+        cover_value: customization.cover_value,
+        custom_message: customization.custom_message,
+      });
+      setEvent(data);
+      setCustomizationFeedback('Modifications enregistrées ✓');
+      setTimeout(() => setCustomizationFeedback(''), 3000);
+    } catch (err) {
+      setCustomizationFeedback(err.response?.data?.error || 'Erreur lors de l\'enregistrement');
+    } finally {
+      setCustomizationSaving(false);
+    }
+  };
+
+  const handleImageUpload = async (file) => {
+    const formData = new FormData();
+    formData.append('file', file);
+    try {
+      const { data } = await api.post(`/events/${id}/cover-image`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' },
+      });
+      setCustomization((prev) => ({ ...prev, cover_value: data.cover_value }));
+      setEvent((prev) => ({ ...prev, cover_type: 'image', cover_value: data.cover_value }));
+      setCustomizationFeedback('Image uploadée ✓');
+      setTimeout(() => setCustomizationFeedback(''), 3000);
+    } catch (err) {
+      setCustomizationFeedback(err.response?.data?.error || 'Erreur lors de l\'upload');
     }
   };
 
@@ -113,6 +159,38 @@ export default function EventDetailPage({ params }) {
           </button>
         </div>
       </section>
+
+      <EventCustomization
+        value={customization}
+        onChange={setCustomization}
+        onImageUpload={handleImageUpload}
+        canUploadImage={true}
+        currentImageUrl={event?.cover_value && event.cover_type === 'image' ? event.cover_value : null}
+      />
+
+      <div style={{ display: 'flex', gap: '1rem', marginTop: '0px' }}>
+        <button
+          className={`${s.btn} ${s.primaryBtn}`}
+          onClick={handleUpdateCustomization}
+          disabled={customizationSaving}
+        >
+          {customizationSaving ? 'Enregistrement...' : 'Enregistrer les modifications'}
+        </button>
+      </div>
+
+      {customizationFeedback && (
+        <div style={{
+          fontSize: '13px',
+          borderRadius: '12px',
+          padding: '10px 12px',
+          marginTop: '12px',
+          color: customizationFeedback.includes('Erreur') ? 'var(--danger)' : 'var(--mint)',
+          background: customizationFeedback.includes('Erreur') ? 'rgba(251, 113, 133, 0.12)' : 'rgba(52, 211, 153, 0.15)',
+          border: customizationFeedback.includes('Erreur') ? '1px solid rgba(251, 113, 133, 0.25)' : '1px solid rgba(52, 211, 153, 0.25)',
+        }}>
+          {customizationFeedback}
+        </div>
+      )}
 
       {event.event_type === 'open' ? (
         <OpenEventDashboard

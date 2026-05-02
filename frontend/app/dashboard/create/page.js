@@ -4,12 +4,23 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import api from '@/lib/api';
 import EventTypeSelector from '@/components/EventTypeSelector';
+import EventCustomization from '@/components/EventCustomization';
 import BulkGuestImporter from '@/components/BulkGuestImporter';
 import s from '@/styles/create.module.scss';
 
 export default function CreateEventPage() {
   const router = useRouter();
-  const [form, setForm] = useState({ title: '', date: '', location: '', description: '', event_type: 'private' });
+  const [form, setForm] = useState({
+    title: '',
+    date: '',
+    location: '',
+    description: '',
+    event_type: 'private',
+    theme: 'minimal',
+    cover_type: 'gradient',
+    cover_value: 'mint_default',
+    custom_message: '',
+  });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [showBulkImport, setShowBulkImport] = useState(false);
@@ -17,6 +28,8 @@ export default function CreateEventPage() {
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleEventTypeChange = (event_type) => setForm({ ...form, event_type });
+
+  const handleCustomizationChange = (customization) => setForm({ ...form, ...customization });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -106,6 +119,17 @@ export default function CreateEventPage() {
           </div>
 
           <EventTypeSelector value={form.event_type} onChange={handleEventTypeChange} />
+
+          <EventCustomization
+            value={{
+              theme: form.theme,
+              cover_type: form.cover_type,
+              cover_value: form.cover_value,
+              custom_message: form.custom_message,
+            }}
+            onChange={handleCustomizationChange}
+            canUploadImage={false}
+          />
 
           {error && <p className={s.error}>{error}</p>}
 

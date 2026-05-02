@@ -4,6 +4,17 @@ import { useEffect, useMemo, useState, use } from 'react';
 import api from '@/lib/api';
 import s from '@/styles/invite.module.scss';
 
+const THEME_GRADIENTS = {
+  birthday: 'linear-gradient(135deg, var(--violet), var(--rose))',
+  wedding: 'linear-gradient(135deg, #e8d5b7, #f5ebe0)',
+  baby_shower: 'linear-gradient(135deg, var(--mint), var(--violet-soft))',
+  bbq: 'linear-gradient(135deg, var(--rose), var(--gold))',
+  house_party: 'linear-gradient(135deg, var(--violet), var(--mint))',
+  chill_night: 'linear-gradient(135deg, #1a1a2e, var(--violet))',
+  corporate: 'linear-gradient(135deg, #2d3748, #4a5568)',
+  minimal: 'linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04))',
+};
+
 const RSVP_OPTIONS = [
   { value: 'yes', label: 'Je viens', tone: 'yes' },
   { value: 'maybe', label: 'Peut-être', tone: 'maybe' },
@@ -140,9 +151,40 @@ export default function InvitePage({ params }) {
 
   return (
     <main className={s.page}>
+      {event?.cover_type === 'image' && event?.cover_value ? (
+        <img
+          src={event.cover_value}
+          alt="Couverture de l'événement"
+          style={{
+            width: '100%',
+            height: '200px',
+            objectFit: 'cover',
+            borderRadius: '28px',
+            marginBottom: '24px',
+            boxShadow: 'var(--shadow)',
+          }}
+        />
+      ) : (
+        <div
+          style={{
+            width: '100%',
+            height: '200px',
+            background: THEME_GRADIENTS[event?.theme || 'minimal'],
+            borderRadius: '28px',
+            marginBottom: '24px',
+            boxShadow: 'var(--shadow)',
+          }}
+        />
+      )}
+
       <section className={s.event}>
         <p className={s.kicker}>Invitation</p>
         <h1 className={s.title}>{event.title}</h1>
+        {event?.custom_message && (
+          <p className={s.customMessage} style={{ marginBottom: '14px', fontStyle: 'italic', color: 'var(--text-muted)' }}>
+            "{event.custom_message}"
+          </p>
+        )}
         <div className={s.meta}>
           <span>{formattedDate}</span>
           <span>{event.location}</span>
