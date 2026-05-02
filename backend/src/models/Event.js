@@ -32,6 +32,36 @@ const Event = sequelize.define('Event', {
     defaultValue: 'private',
     allowNull: false,
   },
+  theme: {
+    type: DataTypes.VARCHAR(50),
+    allowNull: false,
+    defaultValue: 'minimal',
+    validate: {
+      isIn: {
+        args: [['birthday', 'wedding', 'baby_shower', 'bbq', 'house_party', 'chill_night', 'corporate', 'minimal']],
+        msg: 'Invalid theme',
+      },
+    },
+  },
+  cover_type: {
+    type: DataTypes.VARCHAR(20),
+    allowNull: false,
+    defaultValue: 'gradient',
+    validate: {
+      isIn: {
+        args: [['gradient', 'image']],
+        msg: 'cover_type must be gradient or image',
+      },
+    },
+  },
+  cover_value: {
+    type: DataTypes.TEXT,
+    allowNull: true,
+  },
+  custom_message: {
+    type: DataTypes.VARCHAR(160),
+    allowNull: true,
+  },
   slug: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,
