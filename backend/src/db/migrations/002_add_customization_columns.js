@@ -4,13 +4,13 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.addColumn('events', 'theme', {
-      type: Sequelize.VARCHAR(50),
+      type: Sequelize.STRING(50),
       allowNull: false,
       defaultValue: 'minimal',
     });
 
     await queryInterface.addColumn('events', 'cover_type', {
-      type: Sequelize.VARCHAR(20),
+      type: Sequelize.STRING(20),
       allowNull: false,
       defaultValue: 'gradient',
     });
@@ -21,7 +21,7 @@ module.exports = {
     });
 
     await queryInterface.addColumn('events', 'custom_message', {
-      type: Sequelize.VARCHAR(160),
+      type: Sequelize.STRING(160),
       allowNull: true,
     });
   },

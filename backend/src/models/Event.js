@@ -33,7 +33,7 @@ const Event = sequelize.define('Event', {
     allowNull: false,
   },
   theme: {
-    type: DataTypes.VARCHAR(50),
+    type: DataTypes.STRING(50),
     allowNull: false,
     defaultValue: 'minimal',
     validate: {
@@ -44,7 +44,7 @@ const Event = sequelize.define('Event', {
     },
   },
   cover_type: {
-    type: DataTypes.VARCHAR(20),
+    type: DataTypes.STRING(20),
     allowNull: false,
     defaultValue: 'gradient',
     validate: {
@@ -59,7 +59,7 @@ const Event = sequelize.define('Event', {
     allowNull: true,
   },
   custom_message: {
-    type: DataTypes.VARCHAR(160),
+    type: DataTypes.STRING(160),
     allowNull: true,
   },
   slug: {
