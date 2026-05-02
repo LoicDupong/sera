@@ -15,6 +15,20 @@ const THEME_GRADIENTS = {
   minimal: 'linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04))',
 };
 
+const COVER_GRADIENTS = {
+  mint_default: 'linear-gradient(135deg, var(--mint), var(--violet-soft))',
+  violet_default: 'linear-gradient(135deg, var(--violet), var(--rose))',
+  rose_default: 'linear-gradient(135deg, var(--rose), var(--gold))',
+  gold_default: 'linear-gradient(135deg, var(--gold), var(--rose))',
+};
+
+function getHeroBackground(event) {
+  if (!event) return THEME_GRADIENTS.minimal;
+  const coverVal = event.cover_value;
+  if (coverVal && COVER_GRADIENTS[coverVal]) return COVER_GRADIENTS[coverVal];
+  return THEME_GRADIENTS[event.theme] || THEME_GRADIENTS.minimal;
+}
+
 const RSVP_OPTIONS = [
   { value: 'yes', label: 'Je viens', tone: 'yes' },
   { value: 'maybe', label: 'Peut-être', tone: 'maybe' },
@@ -94,7 +108,6 @@ export default function InvitePage({ params }) {
       setGuest({ id: data.guest_id, rsvp_status: data.rsvp_status });
       setSelectedRsvp(data.rsvp_status === 'pending' ? '' : data.rsvp_status);
 
-      // For open events: skip RSVP step and go directly to confirmation
       if (event?.event_type === 'open') {
         setStep('done');
       } else {
@@ -149,41 +162,31 @@ export default function InvitePage({ params }) {
     );
   }
 
+  const theme = event.theme || 'minimal';
+  const coverType = event.cover_type || 'gradient';
+  const coverValue = event.cover_value || null;
+  const customMessage = event.custom_message || null;
+
   return (
     <main className={s.page}>
-      {event?.cover_type === 'image' && event?.cover_value ? (
+      {coverType === 'image' && coverValue ? (
         <img
-          src={event.cover_value}
+          src={coverValue}
           alt="Couverture de l'événement"
-          style={{
-            width: '100%',
-            height: '200px',
-            objectFit: 'cover',
-            borderRadius: '28px',
-            marginBottom: '24px',
-            boxShadow: 'var(--shadow)',
-          }}
+          className={s.heroImage}
         />
       ) : (
         <div
-          style={{
-            width: '100%',
-            height: '200px',
-            background: THEME_GRADIENTS[event?.theme || 'minimal'],
-            borderRadius: '28px',
-            marginBottom: '24px',
-            boxShadow: 'var(--shadow)',
-          }}
+          className={s.heroGradient}
+          style={{ background: getHeroBackground(event) }}
         />
       )}
 
       <section className={s.event}>
         <p className={s.kicker}>Invitation</p>
         <h1 className={s.title}>{event.title}</h1>
-        {event?.custom_message && (
-          <p className={s.customMessage} style={{ marginBottom: '14px', fontStyle: 'italic', color: 'var(--text-muted)' }}>
-            "{event.custom_message}"
-          </p>
+        {customMessage && (
+          <p className={s.customMessage}>"{customMessage}"</p>
         )}
         <div className={s.meta}>
           <span>{formattedDate}</span>
@@ -228,23 +231,21 @@ export default function InvitePage({ params }) {
           </div>
 
           {event?.event_type === 'open' && (
-            <>
-              <div className={s.rsvpSection}>
-                <p className={s.rsvpLabel}>Ta réponse</p>
-                <div className={s.options}>
-                  {RSVP_OPTIONS.map((option) => (
-                    <button
-                      key={option.value}
-                      type="button"
-                      className={`${s.optionBtn} ${s[option.tone]} ${selectedRsvp === option.value ? s.active : ''}`}
-                      onClick={() => setSelectedRsvp(option.value)}
-                    >
-                      {option.label}
-                    </button>
-                  ))}
-                </div>
+            <div className={s.rsvpSection}>
+              <p className={s.rsvpLabel}>Ta réponse</p>
+              <div className={s.options}>
+                {RSVP_OPTIONS.map((option) => (
+                  <button
+                    key={option.value}
+                    type="button"
+                    className={`${s.optionBtn} ${s[option.tone]} ${selectedRsvp === option.value ? s.active : ''}`}
+                    onClick={() => setSelectedRsvp(option.value)}
+                  >
+                    {option.label}
+                  </button>
+                ))}
               </div>
-            </>
+            </div>
           )}
 
           {error && <p className={s.error}>{error}</p>}

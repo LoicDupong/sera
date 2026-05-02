@@ -21,7 +21,40 @@ const GRADIENT_OPTIONS = [
   { value: 'gold_default', name: 'Gold', key: 'gold' },
 ];
 
-export default function EventCustomization({ value = {}, onChange, onImageUpload, canUploadImage = false, currentImageUrl = null }) {
+const THEME_GRADIENTS = {
+  birthday: 'linear-gradient(135deg, var(--violet), var(--rose))',
+  wedding: 'linear-gradient(135deg, #e8d5b7, #f5ebe0)',
+  baby_shower: 'linear-gradient(135deg, var(--mint), var(--violet-soft))',
+  bbq: 'linear-gradient(135deg, var(--rose), var(--gold))',
+  house_party: 'linear-gradient(135deg, var(--violet), var(--mint))',
+  chill_night: 'linear-gradient(135deg, #1a1a2e, var(--violet))',
+  corporate: 'linear-gradient(135deg, #2d3748, #4a5568)',
+  minimal: 'linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04))',
+};
+
+const COVER_GRADIENTS = {
+  mint_default: 'linear-gradient(135deg, var(--mint), var(--violet-soft))',
+  violet_default: 'linear-gradient(135deg, var(--violet), var(--rose))',
+  rose_default: 'linear-gradient(135deg, var(--rose), var(--gold))',
+  gold_default: 'linear-gradient(135deg, var(--gold), var(--rose))',
+};
+
+function getPreviewBackground(cover_type, cover_value, theme) {
+  if (cover_type === 'image' && cover_value) return null;
+  if (cover_value && COVER_GRADIENTS[cover_value]) return COVER_GRADIENTS[cover_value];
+  return THEME_GRADIENTS[theme] || THEME_GRADIENTS.minimal;
+}
+
+export default function EventCustomization({
+  value = {},
+  onChange,
+  onImageUpload,
+  canUploadImage = false,
+  currentImageUrl = null,
+  onSave,
+  saving = false,
+  feedback = '',
+}) {
   const {
     theme = 'minimal',
     cover_type = 'gradient',
@@ -64,9 +97,26 @@ export default function EventCustomization({ value = {}, onChange, onImageUpload
     }
   };
 
+  const previewBg = getPreviewBackground(cover_type, cover_value, theme);
+  const isError = feedback && (feedback.toLowerCase().includes('erreur') || feedback.toLowerCase().includes('error'));
+
   return (
     <section className={s.section}>
       <span className={s.sectionTitle}>Personnalisation</span>
+
+      {/* Preview strip */}
+      <div className={s.preview}>
+        {cover_type === 'image' && (currentImageUrl || (cover_type === 'image' && cover_value && !COVER_GRADIENTS[cover_value])) ? (
+          <img
+            src={currentImageUrl || cover_value}
+            alt="Aperçu couverture"
+            className={s.previewImage}
+          />
+        ) : (
+          <div className={s.previewGradient} style={{ background: previewBg }} />
+        )}
+        <span className={s.previewLabel}>Aperçu couverture</span>
+      </div>
 
       {/* Theme selector */}
       <div className={s.subsection}>
@@ -168,6 +218,25 @@ export default function EventCustomization({ value = {}, onChange, onImageUpload
           </div>
         </div>
       </div>
+
+      {/* Save button — only rendered when onSave is provided (dashboard context) */}
+      {onSave && (
+        <>
+          <button
+            type="button"
+            className={s.saveBtn}
+            onClick={onSave}
+            disabled={saving || imageLoading}
+          >
+            {saving ? 'Enregistrement...' : 'Enregistrer les modifications'}
+          </button>
+          {feedback && (
+            <div className={`${s.feedback} ${isError ? s.error : s.success}`}>
+              {feedback}
+            </div>
+          )}
+        </>
+      )}
     </section>
   );
 }

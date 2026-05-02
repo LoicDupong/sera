@@ -7,7 +7,7 @@ const normalize = (str) =>
 const getEventBySlug = async (req, res) => {
   const event = await Event.findOne({
     where: { slug: req.params.slug },
-    attributes: ['id', 'title', 'description', 'date', 'location', 'slug', 'event_type'],
+    attributes: ['id', 'title', 'description', 'date', 'location', 'slug', 'event_type', 'theme', 'cover_type', 'cover_value', 'custom_message'],
   });
   if (!event) return res.status(404).json({ error: 'Event introuvable' });
   res.json(event);

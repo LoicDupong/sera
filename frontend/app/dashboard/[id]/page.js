@@ -166,31 +166,10 @@ export default function EventDetailPage({ params }) {
         onImageUpload={handleImageUpload}
         canUploadImage={true}
         currentImageUrl={event?.cover_value && event.cover_type === 'image' ? event.cover_value : null}
+        onSave={handleUpdateCustomization}
+        saving={customizationSaving}
+        feedback={customizationFeedback}
       />
-
-      <div style={{ display: 'flex', gap: '1rem', marginTop: '0px' }}>
-        <button
-          className={`${s.btn} ${s.primaryBtn}`}
-          onClick={handleUpdateCustomization}
-          disabled={customizationSaving}
-        >
-          {customizationSaving ? 'Enregistrement...' : 'Enregistrer les modifications'}
-        </button>
-      </div>
-
-      {customizationFeedback && (
-        <div style={{
-          fontSize: '13px',
-          borderRadius: '12px',
-          padding: '10px 12px',
-          marginTop: '12px',
-          color: customizationFeedback.includes('Erreur') ? 'var(--danger)' : 'var(--mint)',
-          background: customizationFeedback.includes('Erreur') ? 'rgba(251, 113, 133, 0.12)' : 'rgba(52, 211, 153, 0.15)',
-          border: customizationFeedback.includes('Erreur') ? '1px solid rgba(251, 113, 133, 0.25)' : '1px solid rgba(52, 211, 153, 0.25)',
-        }}>
-          {customizationFeedback}
-        </div>
-      )}
 
       {event.event_type === 'open' ? (
         <OpenEventDashboard
