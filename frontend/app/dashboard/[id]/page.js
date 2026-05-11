@@ -35,10 +35,11 @@ export default function EventDetailPage({ params }) {
         setEvent(data);
         setGuests(data.guests ?? []);
         setCustomization({
-          theme: data.theme || 'minimal',
+          theme: data.theme || 'elegant_minimal',
           cover_type: data.cover_type || 'gradient',
           cover_value: data.cover_value || 'mint_default',
           custom_message: data.custom_message || '',
+          font_style: data.font_style || 'classic',
         });
       })
       .catch(() => {})
@@ -89,6 +90,7 @@ export default function EventDetailPage({ params }) {
         cover_type: customization.cover_type,
         cover_value: customization.cover_value,
         custom_message: customization.custom_message,
+        font_style: customization.font_style,
       });
       setEvent(data);
       setCustomizationFeedback('Modifications enregistrées ✓');
