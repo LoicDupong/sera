@@ -20,7 +20,7 @@ const RSVP_OPTIONS = [
 
 const CONFIRMATION_COPY = {
   yes: 'À bientôt !',
-  maybe: 'On espère vous voir !',
+  maybe: 'On espère te voir !',
   no: 'Pas de souci !',
 };
 
@@ -113,16 +113,19 @@ export default function InvitePage({ params }) {
   const coverType = event?.cover_type || 'gradient';
   const coverValue = event?.cover_value || null;
 
-  const heroBg = coverType === 'gradient' && coverValue && COVER_GRADIENTS[coverValue]
+  const heroBgOverride = coverType === 'gradient' && coverValue && COVER_GRADIENTS[coverValue]
     ? COVER_GRADIENTS[coverValue]
-    : themeConfig.heroBg;
+    : null;
 
   if (!event) {
     return (
       <div
         className={s.page}
         data-theme={themeKey}
-        style={{ '--font-display': fontFamily }}
+        style={{
+          '--font-display': fontFamily,
+          ...(heroBgOverride ? { '--invite-hero-bg-override': heroBgOverride } : {}),
+        }}
       >
         <div className={s.card}>
           <p className={s.kicker}>Sera</p>
@@ -137,7 +140,10 @@ export default function InvitePage({ params }) {
     <div
       className={s.page}
       data-theme={themeKey}
-      style={{ '--font-display': fontFamily, '--invite-hero-bg-override': heroBg }}
+      style={{
+        '--font-display': fontFamily,
+        ...(heroBgOverride ? { '--invite-hero-bg-override': heroBgOverride } : {}),
+      }}
     >
       {/* Hero */}
       <section className={s.hero}>
@@ -202,7 +208,6 @@ export default function InvitePage({ params }) {
                       key={option.value}
                       type="button"
                       className={`${s.optionBtn} ${selectedRsvp === option.value ? s.active : ''}`}
-                      data-tone={option.tone}
                       onClick={() => setSelectedRsvp(option.value)}
                     >
                       {option.label}
@@ -232,7 +237,6 @@ export default function InvitePage({ params }) {
                   key={option.value}
                   type="button"
                   className={`${s.optionBtn} ${selectedRsvp === option.value ? s.active : ''}`}
-                  data-tone={option.tone}
                   onClick={() => setSelectedRsvp(option.value)}
                 >
                   {option.label}
