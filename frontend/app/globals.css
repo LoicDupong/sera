@@ -100,3 +100,75 @@ textarea:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── Guest page theme tokens ────────────────────────────── */
+
+[data-theme="elegant_minimal"] {
+  --invite-hero-bg: #FAFAF8;
+  --invite-card-bg: #FFFFFF;
+  --invite-accent: #1A1A1A;
+  --invite-text: #1A1A1A;
+  --invite-text-muted: #6B6B6B;
+  --invite-border: rgba(0, 0, 0, 0.08);
+  --invite-input-bg: rgba(0, 0, 0, 0.04);
+  --invite-input-border: rgba(0, 0, 0, 0.15);
+  --invite-input-focus-border: rgba(0, 0, 0, 0.4);
+  --invite-btn-text: #FFFFFF;
+  --invite-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+}
+
+[data-theme="luxury_party"] {
+  --invite-hero-bg: #18181B;
+  --invite-card-bg: #1C1C22;
+  --invite-accent: #C9A84C;
+  --invite-text: #FFFFFF;
+  --invite-text-muted: rgba(255, 255, 255, 0.6);
+  --invite-border: rgba(255, 255, 255, 0.10);
+  --invite-input-bg: rgba(255, 255, 255, 0.06);
+  --invite-input-border: rgba(255, 255, 255, 0.15);
+  --invite-input-focus-border: rgba(255, 255, 255, 0.35);
+  --invite-btn-text: #FFFFFF;
+  --invite-shadow: 0 8px 32px rgba(0, 0, 0, 0.40);
+}
+
+[data-theme="editorial_chic"] {
+  --invite-hero-bg: #F5F3EE;
+  --invite-card-bg: #FFFFFF;
+  --invite-accent: #3D3530;
+  --invite-text: #1A1A1A;
+  --invite-text-muted: #6B6B6B;
+  --invite-border: rgba(0, 0, 0, 0.08);
+  --invite-input-bg: rgba(0, 0, 0, 0.04);
+  --invite-input-border: rgba(0, 0, 0, 0.15);
+  --invite-input-focus-border: rgba(0, 0, 0, 0.4);
+  --invite-btn-text: #FFFFFF;
+  --invite-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="feminine_luxe"] {
+  --invite-hero-bg: #FDF6F0;
+  --invite-card-bg: #FFFFFF;
+  --invite-accent: #C8857A;
+  --invite-text: #1A1A1A;
+  --invite-text-muted: #7A5F5B;
+  --invite-border: rgba(200, 133, 122, 0.15);
+  --invite-input-bg: rgba(200, 133, 122, 0.04);
+  --invite-input-border: rgba(200, 133, 122, 0.2);
+  --invite-input-focus-border: rgba(200, 133, 122, 0.5);
+  --invite-btn-text: #FFFFFF;
+  --invite-shadow: 0 8px 32px rgba(200, 133, 122, 0.15);
+}
+
+[data-theme="bold_celebration"] {
+  --invite-hero-bg: #0E0E0E;
+  --invite-card-bg: #1A1A1A;
+  --invite-accent: #7C3AED;
+  --invite-text: #FFFFFF;
+  --invite-text-muted: rgba(255, 255, 255, 0.6);
+  --invite-border: rgba(124, 58, 237, 0.20);
+  --invite-input-bg: rgba(255, 255, 255, 0.06);
+  --invite-input-border: rgba(255, 255, 255, 0.15);
+  --invite-input-focus-border: rgba(124, 58, 237, 0.6);
+  --invite-btn-text: #FFFFFF;
+  --invite-shadow: 0 8px 32px rgba(124, 58, 237, 0.20);
+}
