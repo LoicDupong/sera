@@ -1,18 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { THEME_CONFIGS, FONT_OPTIONS, getThemeConfig } from '@/lib/themeConfig';
 import s from '@/styles/eventCustomization.module.scss';
-
-const THEMES = [
-  { value: 'birthday', label: 'Anniversaire', emoji: '🎂' },
-  { value: 'wedding', label: 'Mariage', emoji: '💍' },
-  { value: 'baby_shower', label: 'Baby shower', emoji: '🍼' },
-  { value: 'bbq', label: 'BBQ', emoji: '🔥' },
-  { value: 'house_party', label: 'Soirée', emoji: '🏠' },
-  { value: 'chill_night', label: 'Soirée chill', emoji: '🌙' },
-  { value: 'corporate', label: 'Corporate', emoji: '💼' },
-  { value: 'minimal', label: 'Minimaliste', emoji: '✨' },
-];
 
 const GRADIENT_OPTIONS = [
   { value: 'mint_default', name: 'Mint', key: 'mint' },
@@ -20,17 +10,6 @@ const GRADIENT_OPTIONS = [
   { value: 'rose_default', name: 'Rose', key: 'rose' },
   { value: 'gold_default', name: 'Gold', key: 'gold' },
 ];
-
-const THEME_GRADIENTS = {
-  birthday: 'linear-gradient(135deg, var(--violet), var(--rose))',
-  wedding: 'linear-gradient(135deg, #e8d5b7, #f5ebe0)',
-  baby_shower: 'linear-gradient(135deg, var(--mint), var(--violet-soft))',
-  bbq: 'linear-gradient(135deg, var(--rose), var(--gold))',
-  house_party: 'linear-gradient(135deg, var(--violet), var(--mint))',
-  chill_night: 'linear-gradient(135deg, #1a1a2e, var(--violet))',
-  corporate: 'linear-gradient(135deg, #2d3748, #4a5568)',
-  minimal: 'linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04))',
-};
 
 const COVER_GRADIENTS = {
   mint_default: 'linear-gradient(135deg, var(--mint), var(--violet-soft))',
@@ -42,7 +21,8 @@ const COVER_GRADIENTS = {
 function getPreviewBackground(cover_type, cover_value, theme) {
   if (cover_type === 'image' && cover_value) return null;
   if (cover_value && COVER_GRADIENTS[cover_value]) return COVER_GRADIENTS[cover_value];
-  return THEME_GRADIENTS[theme] || THEME_GRADIENTS.minimal;
+  const config = getThemeConfig(theme);
+  return `linear-gradient(135deg, ${config.heroBg}, ${config.accent}22)`;
 }
 
 export default function EventCustomization({
@@ -56,16 +36,21 @@ export default function EventCustomization({
   feedback = '',
 }) {
   const {
-    theme = 'minimal',
+    theme = 'elegant_minimal',
     cover_type = 'gradient',
     cover_value = 'mint_default',
     custom_message = '',
+    font_style = 'classic',
   } = value;
 
   const [imageLoading, setImageLoading] = useState(false);
 
   const handleThemeChange = (newTheme) => {
     onChange({ ...value, theme: newTheme });
+  };
+
+  const handleFontChange = (newFont) => {
+    onChange({ ...value, font_style: newFont });
   };
 
   const handleCoverTypeChange = (newType) => {
@@ -102,7 +87,7 @@ export default function EventCustomization({
 
   return (
     <section className={s.section}>
-      <span className={s.sectionTitle}>Personnalisation</span>
+      <span className={s.sectionTitle}>Design de l'invitation</span>
 
       {/* Preview strip */}
       <div className={s.preview}>
@@ -120,17 +105,38 @@ export default function EventCustomization({
 
       {/* Theme selector */}
       <div className={s.subsection}>
-        <label className={s.subsectionLabel}>Thème de l'événement</label>
+        <label className={s.subsectionLabel}>Ambiance</label>
         <div className={s.themeGrid}>
-          {THEMES.map((t) => (
+          {Object.entries(THEME_CONFIGS).map(([key, config]) => (
             <button
-              key={t.value}
+              key={key}
               type="button"
-              className={`${s.themeCard} ${theme === t.value ? s.active : ''}`}
-              onClick={() => handleThemeChange(t.value)}
+              className={`${s.themeCard} ${theme === key ? s.active : ''}`}
+              onClick={() => handleThemeChange(key)}
             >
-              <span className={s.emoji}>{t.emoji}</span>
-              <span className={s.label}>{t.label}</span>
+              <span
+                className={s.themeSwatch}
+                style={{ background: config.heroBg, borderColor: config.accent + '40' }}
+              />
+              <span className={s.label}>{config.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Font selector */}
+      <div className={s.subsection}>
+        <label className={s.subsectionLabel}>Typographie</label>
+        <div className={s.fontSelector}>
+          {FONT_OPTIONS.map((opt) => (
+            <button
+              key={opt.value}
+              type="button"
+              className={`${s.fontOption} ${font_style === opt.value ? s.active : ''}`}
+              onClick={() => handleFontChange(opt.value)}
+              style={{ fontFamily: opt.cssVar }}
+            >
+              {opt.label}
             </button>
           ))}
         </div>
@@ -219,7 +225,6 @@ export default function EventCustomization({
         </div>
       </div>
 
-      {/* Save button — only rendered when onSave is provided (dashboard context) */}
       {onSave && (
         <>
           <button
