@@ -35,10 +35,10 @@ const Event = sequelize.define('Event', {
   theme: {
     type: DataTypes.STRING(50),
     allowNull: false,
-    defaultValue: 'minimal',
+    defaultValue: 'elegant_minimal',
     validate: {
       isIn: {
-        args: [['birthday', 'wedding', 'baby_shower', 'bbq', 'house_party', 'chill_night', 'corporate', 'minimal']],
+        args: [['elegant_minimal', 'luxury_party', 'editorial_chic', 'feminine_luxe', 'bold_celebration']],
         msg: 'Invalid theme',
       },
     },
@@ -61,6 +61,17 @@ const Event = sequelize.define('Event', {
   custom_message: {
     type: DataTypes.STRING(160),
     allowNull: true,
+  },
+  font_style: {
+    type: DataTypes.STRING(20),
+    allowNull: false,
+    defaultValue: 'classic',
+    validate: {
+      isIn: {
+        args: [['classic', 'script', 'modern']],
+        msg: 'font_style must be classic, script, or modern',
+      },
+    },
   },
   slug: {
     type: DataTypes.UUID,
