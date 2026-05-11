@@ -12,6 +12,7 @@ const create = async (req, res) => {
     cover_type,
     cover_value,
     custom_message,
+    font_style,
   } = req.body;
 
   // Validate required fields
@@ -25,9 +26,15 @@ const create = async (req, res) => {
   }
 
   // Validate theme
-  const validThemes = ['birthday', 'wedding', 'baby_shower', 'bbq', 'house_party', 'chill_night', 'corporate', 'minimal'];
+  const validThemes = ['elegant_minimal', 'luxury_party', 'editorial_chic', 'feminine_luxe', 'bold_celebration'];
   if (theme && !validThemes.includes(theme)) {
     return res.status(400).json({ error: 'Invalid theme' });
+  }
+
+  // Validate font_style
+  const validFontStyles = ['classic', 'script', 'modern'];
+  if (font_style && !validFontStyles.includes(font_style)) {
+    return res.status(400).json({ error: 'font_style invalide' });
   }
 
   // Validate cover_type
@@ -48,10 +55,11 @@ const create = async (req, res) => {
       date,
       location,
       event_type: event_type || 'private',
-      theme: theme || 'minimal',
+      theme: theme || 'elegant_minimal',
       cover_type: cover_type || 'gradient',
-      cover_value: cover_value || `${theme || 'minimal'}_default`,
+      cover_value: cover_value || `${theme || 'elegant_minimal'}_default`,
       custom_message: custom_message ? custom_message.trim() : null,
+      font_style: font_style || 'classic',
     });
 
     res.status(201).json(event);
@@ -88,6 +96,7 @@ const update = async (req, res) => {
     cover_type,
     cover_value,
     custom_message,
+    font_style,
   } = req.body;
 
   try {
@@ -102,9 +111,16 @@ const update = async (req, res) => {
 
     // Validate fields if provided
     if (theme) {
-      const validThemes = ['birthday', 'wedding', 'baby_shower', 'bbq', 'house_party', 'chill_night', 'corporate', 'minimal'];
+      const validThemes = ['elegant_minimal', 'luxury_party', 'editorial_chic', 'feminine_luxe', 'bold_celebration'];
       if (!validThemes.includes(theme)) {
         return res.status(400).json({ error: 'Invalid theme' });
+      }
+    }
+
+    if (font_style) {
+      const validFontStyles = ['classic', 'script', 'modern'];
+      if (!validFontStyles.includes(font_style)) {
+        return res.status(400).json({ error: 'font_style invalide' });
       }
     }
 
@@ -126,6 +142,7 @@ const update = async (req, res) => {
     if (cover_type !== undefined) updates.cover_type = cover_type;
     if (cover_value !== undefined) updates.cover_value = cover_value;
     if (custom_message !== undefined) updates.custom_message = custom_message ? custom_message.trim() : null;
+    if (font_style !== undefined) updates.font_style = font_style;
 
     await event.update(updates);
     res.json(event);
