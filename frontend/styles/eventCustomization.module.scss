@@ -99,6 +99,10 @@
   &.active {
     border-color: #ffffff;
     background: rgba(255, 255, 255, 0.12);
+
+    .label {
+      color: var(--text);
+    }
   }
 
   .label {
