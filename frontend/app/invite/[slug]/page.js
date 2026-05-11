@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState, use } from 'react';
 import api from '@/lib/api';
-import { getThemeConfig, getFontFamily } from '@/lib/themeConfig';
+import { getFontFamily } from '@/lib/themeConfig';
 import s from '@/styles/invite.module.scss';
 
 const COVER_GRADIENTS = {
@@ -108,7 +108,6 @@ export default function InvitePage({ params }) {
   }
 
   const themeKey = event?.theme || 'elegant_minimal';
-  const themeConfig = getThemeConfig(themeKey);
   const fontFamily = getFontFamily(event?.font_style || 'classic');
   const coverType = event?.cover_type || 'gradient';
   const coverValue = event?.cover_value || null;

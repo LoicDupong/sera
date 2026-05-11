@@ -56,6 +56,7 @@ export const getThemeConfig = (themeKey) =>
 export const FONT_OPTIONS = [
   { value: 'classic', label: 'Playfair', cssVar: 'var(--font-playfair)' },
   { value: 'script', label: 'Allura', cssVar: 'var(--font-allura)' },
+  // Inter is already available as a system font on most platforms; no Google Fonts import needed
   { value: 'modern', label: 'Inter', cssVar: 'Inter, ui-sans-serif, system-ui, sans-serif' },
 ];
 
