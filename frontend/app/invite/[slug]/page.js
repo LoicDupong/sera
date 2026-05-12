@@ -1,16 +1,9 @@
 'use client';
 
 import { useEffect, useMemo, useState, use } from 'react';
-import api from '@/lib/api';
-import { getFontFamily } from '@/lib/themeConfig';
+import api, { getMediaUrl } from '@/lib/api';
+import { getFontFamily, getThemeConfig, COVER_GRADIENTS } from '@/lib/themeConfig';
 import s from '@/styles/invite.module.scss';
-
-const COVER_GRADIENTS = {
-  mint_default: 'linear-gradient(135deg, #34d399, rgba(167,139,250,0.5))',
-  violet_default: 'linear-gradient(135deg, #a78bfa, #fb7185)',
-  rose_default: 'linear-gradient(135deg, #fb7185, #fbbf24)',
-  gold_default: 'linear-gradient(135deg, #fbbf24, #fb7185)',
-};
 
 const RSVP_OPTIONS = [
   { value: 'yes', label: 'Je serai là', tone: 'yes' },
@@ -108,6 +101,7 @@ export default function InvitePage({ params }) {
   }
 
   const themeKey = event?.theme || 'elegant_minimal';
+  const isDark = getThemeConfig(themeKey).isDark;
   const fontFamily = getFontFamily(event?.font_style || 'classic');
   const coverType = event?.cover_type || 'gradient';
   const coverValue = event?.cover_value || null;
@@ -147,7 +141,7 @@ export default function InvitePage({ params }) {
       {/* Hero */}
       <section className={s.hero}>
         {coverType === 'image' && coverValue ? (
-          <img src={coverValue} alt="Couverture" className={s.heroCoverImage} />
+          <img src={getMediaUrl(coverValue)} alt="Couverture" className={s.heroCoverImage} />
         ) : null}
         <div className={s.heroContent}>
           <p className={s.kicker}>Invitation</p>
@@ -160,10 +154,9 @@ export default function InvitePage({ params }) {
         {event.custom_message && (
           <p className={s.customMessage}>"{event.custom_message}"</p>
         )}
-        <div className={s.meta}>
-          <span>{formattedDate}</span>
-          <span>{event.location}</span>
-        </div>
+        <p className={s.meta}>
+          {[formattedDate, event.location].filter(Boolean).join(' · ')}
+        </p>
         {event.description && <p className={s.description}>{event.description}</p>}
 
         <div className={s.divider} />
@@ -254,7 +247,7 @@ export default function InvitePage({ params }) {
             <p className={s.stepLabel}>Confirmation</p>
             <p className={s.confirmationName}>{identity.first_name},</p>
             <p className={s.confirmationMessage}>
-              {CONFIRMATION_COPY[guest?.rsvp_status] || 'Ta réponse est bien enregistrée.'}
+              {isDark ? '✦ ' : ''}{CONFIRMATION_COPY[guest?.rsvp_status] || 'Ta réponse est bien enregistrée.'}
             </p>
           </div>
         )}
