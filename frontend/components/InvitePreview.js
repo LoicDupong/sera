@@ -16,7 +16,7 @@ export default function InvitePreview({ customization = {}, event }) {
   const config = THEME_CONFIGS[theme] ?? THEME_CONFIGS.elegant_minimal;
   const fontFamily = getFontFamily(font_style);
 
-  const isCustomImage = cover_type === 'image' && cover_value && !COVER_GRADIENTS[cover_value];
+  const isCustomImage = cover_type === 'image' && Boolean(cover_value);
   const heroImg = isCustomImage ? getMediaUrl(cover_value) : null;
   const heroBg = !isCustomImage
     ? (COVER_GRADIENTS[cover_value] ?? `linear-gradient(135deg, ${config.heroBg}, ${config.accent}22)`)
