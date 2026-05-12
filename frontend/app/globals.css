@@ -118,7 +118,7 @@ textarea:focus-visible {
 }
 
 [data-theme="luxury_party"] {
-  --invite-hero-bg: #18181B;
+  --invite-hero-bg: #1C1408;
   --invite-card-bg: #1C1C22;
   --invite-accent: #C9A84C;
   --invite-text: #FFFFFF;
@@ -132,9 +132,9 @@ textarea:focus-visible {
 }
 
 [data-theme="editorial_chic"] {
-  --invite-hero-bg: #F5F3EE;
+  --invite-hero-bg: #E8E2D5;
   --invite-card-bg: #FFFFFF;
-  --invite-accent: #3D3530;
+  --invite-accent: #5C3A2E;
   --invite-text: #1A1A1A;
   --invite-text-muted: #6B6B6B;
   --invite-border: rgba(0, 0, 0, 0.08);
@@ -146,7 +146,7 @@ textarea:focus-visible {
 }
 
 [data-theme="feminine_luxe"] {
-  --invite-hero-bg: #FDF6F0;
+  --invite-hero-bg: #FAF0EB;
   --invite-card-bg: #FFFFFF;
   --invite-accent: #C8857A;
   --invite-text: #1A1A1A;
@@ -162,13 +162,13 @@ textarea:focus-visible {
 [data-theme="bold_celebration"] {
   --invite-hero-bg: #0E0E0E;
   --invite-card-bg: #1A1A1A;
-  --invite-accent: #7C3AED;
+  --invite-accent: #8B5CF6;
   --invite-text: #FFFFFF;
   --invite-text-muted: rgba(255, 255, 255, 0.6);
-  --invite-border: rgba(124, 58, 237, 0.20);
+  --invite-border: rgba(139, 92, 246, 0.20);
   --invite-input-bg: rgba(255, 255, 255, 0.06);
   --invite-input-border: rgba(255, 255, 255, 0.15);
-  --invite-input-focus-border: rgba(124, 58, 237, 0.6);
+  --invite-input-focus-border: rgba(139, 92, 246, 0.6);
   --invite-btn-text: #FFFFFF;
-  --invite-shadow: 0 8px 32px rgba(124, 58, 237, 0.20);
+  --invite-shadow: 0 8px 32px rgba(139, 92, 246, 0.20);
 }
