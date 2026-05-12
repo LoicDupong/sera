@@ -36,6 +36,16 @@ export default async function Image({ params }) {
   const meta = [date, event?.location].filter(Boolean).join(' · ');
   const palette = THEME_BG[event?.theme] ?? THEME_BG.elegant_minimal;
 
+  const hasCoverImage = event?.cover_type === 'image' && event?.cover_value;
+  const coverImageUrl = hasCoverImage
+    ? `${(process.env.NEXT_PUBLIC_API_URL || '').replace(/\/api$/, '')}${event.cover_value}`
+    : null;
+
+  // When a cover image is used, force white text regardless of theme
+  const textColor = hasCoverImage ? '#ffffff' : palette.text;
+  const mutedColor = hasCoverImage ? 'rgba(255,255,255,0.65)' : palette.muted;
+  const accentColor = hasCoverImage ? '#ffffff' : palette.accent;
+
   return new ImageResponse(
     (
       <div
@@ -48,51 +58,70 @@ export default async function Image({ params }) {
           padding: '72px 80px',
           backgroundColor: palette.bg,
           position: 'relative',
+          overflow: 'hidden',
         }}
       >
+        {/* Cover image background */}
+        {coverImageUrl && (
+          <>
+            <img
+              src={coverImageUrl}
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+            {/* Dark overlay for legibility */}
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.65) 100%)',
+              }}
+            />
+          </>
+        )}
+
         {/* Accent bar top */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <div style={{ width: '32px', height: '4px', borderRadius: '2px', backgroundColor: palette.accent }} />
-          <span style={{ fontSize: 18, fontWeight: 700, color: palette.muted, letterSpacing: '3px', textTransform: 'uppercase' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', position: 'relative' }}>
+          <div style={{ width: '32px', height: '4px', borderRadius: '2px', backgroundColor: accentColor }} />
+          <span style={{ fontSize: 18, fontWeight: 700, color: mutedColor, letterSpacing: '3px', textTransform: 'uppercase' }}>
             Invitation
           </span>
         </div>
 
         {/* Main content */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', position: 'relative' }}>
           <div
             style={{
               fontSize: title.length > 30 ? 64 : 80,
               fontWeight: 800,
-              color: palette.text,
+              color: textColor,
               lineHeight: 1.05,
               letterSpacing: '-2px',
               maxWidth: '900px',
+              textShadow: hasCoverImage ? '0 2px 12px rgba(0,0,0,0.4)' : 'none',
             }}
           >
             {title}
           </div>
           {meta && (
-            <div style={{ fontSize: 28, color: palette.muted, fontWeight: 500 }}>
+            <div style={{ fontSize: 28, color: mutedColor, fontWeight: 500 }}>
               {meta}
             </div>
           )}
         </div>
 
         {/* Footer */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: palette.accent }} />
-            <span style={{ fontSize: 20, fontWeight: 700, color: palette.muted }}>sera</span>
+            <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: accentColor }} />
+            <span style={{ fontSize: 20, fontWeight: 700, color: mutedColor }}>sera</span>
           </div>
-          <div
-            style={{
-              fontSize: 16,
-              fontWeight: 600,
-              color: palette.dark ? 'rgba(255,255,255,0.25)' : 'rgba(0,0,0,0.2)',
-              letterSpacing: '1px',
-            }}
-          >
+          <div style={{ fontSize: 16, fontWeight: 600, color: mutedColor, letterSpacing: '1px' }}>
             Répondre à l'invitation →
           </div>
         </div>
