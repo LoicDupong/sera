@@ -128,10 +128,10 @@ export default function EventDetailPage({ params }) {
   if (!event) return <div className={s.page}><p className={s.loading}>Événement introuvable.</p></div>;
 
   const date = new Date(event.date).toLocaleDateString('fr-FR', {
-    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
   });
   const time = new Date(event.date).toLocaleTimeString('fr-FR', {
-    hour: '2-digit', minute: '2-digit',
+    hour: '2-digit', minute: '2-digit', timeZone: 'UTC',
   });
 
   const inviteLink = `${typeof window !== 'undefined' ? window.location.origin : ''}/invite/${event.slug}`;

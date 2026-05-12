@@ -41,7 +41,7 @@ export default function InvitePage({ params }) {
     if (!event?.date) return '';
     return new Date(event.date).toLocaleDateString('fr-FR', {
       weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
-      hour: '2-digit', minute: '2-digit',
+      hour: '2-digit', minute: '2-digit', timeZone: 'UTC',
     });
   }, [event?.date]);
 

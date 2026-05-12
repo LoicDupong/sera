@@ -26,7 +26,7 @@ export default function InvitePreview({ customization = {}, event }) {
 
   const dateShort = event?.date
     ? new Date(event.date).toLocaleDateString('fr-FR', {
-        day: 'numeric', month: 'long', year: 'numeric',
+        day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
       })
     : null;
 
