@@ -12,7 +12,7 @@ export const THEME_CONFIGS = {
   },
   luxury_party: {
     label: 'Luxury Party',
-    heroBg: '#18181B',
+    heroBg: '#1C1408',
     cardBg: '#1C1C22',
     accent: '#C9A84C',
     text: '#FFFFFF',
@@ -21,16 +21,16 @@ export const THEME_CONFIGS = {
   },
   editorial_chic: {
     label: 'Editorial Chic',
-    heroBg: '#F5F3EE',
+    heroBg: '#E8E2D5',
     cardBg: '#FFFFFF',
-    accent: '#3D3530',
+    accent: '#5C3A2E',
     text: '#1A1A1A',
     textMuted: '#6B6B6B',
     isDark: false,
   },
   feminine_luxe: {
     label: 'Feminine Luxe',
-    heroBg: '#FDF6F0',
+    heroBg: '#FAF0EB',
     cardBg: '#FFFFFF',
     accent: '#C8857A',
     text: '#1A1A1A',
@@ -41,7 +41,7 @@ export const THEME_CONFIGS = {
     label: 'Bold Celebration',
     heroBg: '#0E0E0E',
     cardBg: '#1A1A1A',
-    accent: '#7C3AED',
+    accent: '#8B5CF6',
     text: '#FFFFFF',
     textMuted: 'rgba(255,255,255,0.6)',
     isDark: true,
@@ -54,13 +54,26 @@ export const getThemeConfig = (themeKey) =>
   THEME_CONFIGS[themeKey] ?? THEME_CONFIGS[FALLBACK_THEME_KEY];
 
 export const FONT_OPTIONS = [
-  { value: 'classic', label: 'Playfair', cssVar: 'var(--font-playfair)' },
-  { value: 'script', label: 'Allura', cssVar: 'var(--font-allura)' },
-  // Inter is already available as a system font on most platforms; no Google Fonts import needed
-  { value: 'modern', label: 'Inter', cssVar: 'Inter, ui-sans-serif, system-ui, sans-serif' },
+  { value: 'classic', label: 'Playfair', sublabel: 'Classique', cssVar: 'var(--font-playfair)' },
+  { value: 'script', label: 'Allura', sublabel: 'Script', cssVar: 'var(--font-allura)' },
+  { value: 'modern', label: 'Inter', sublabel: 'Moderne', cssVar: 'Inter, ui-sans-serif, system-ui, sans-serif' },
 ];
 
 export const getFontFamily = (fontStyle) => {
   const opt = FONT_OPTIONS.find((f) => f.value === fontStyle);
   return opt ? opt.cssVar : FONT_OPTIONS[0].cssVar;
 };
+
+export const COVER_GRADIENTS = {
+  mint_default:   'linear-gradient(135deg, #34d399, rgba(167,139,250,0.5))',
+  violet_default: 'linear-gradient(135deg, #a78bfa, #fb7185)',
+  rose_default:   'linear-gradient(135deg, #fb7185, #fbbf24)',
+  gold_default:   'linear-gradient(135deg, #fbbf24, #fb7185)',
+};
+
+export const GRADIENT_OPTIONS = [
+  { value: 'mint_default',   name: 'Menthe', key: 'mint' },
+  { value: 'violet_default', name: 'Violet', key: 'violet' },
+  { value: 'rose_default',   name: 'Rose',   key: 'rose' },
+  { value: 'gold_default',   name: 'Or',     key: 'gold' },
+];
