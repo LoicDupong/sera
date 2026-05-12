@@ -1,4 +1,5 @@
 require('dotenv').config({ path: ['.env.local', '.env'] });
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const { sequelize } = require('./models');
@@ -23,6 +24,7 @@ app.use(cors({
   }
 }));
 app.use(express.json());
+app.use('/uploads', express.static(path.join(__dirname, '../public/uploads')));
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events', require('./routes/events'));

@@ -8,6 +8,7 @@ import AddGuestForm from '@/components/AddGuestForm';
 import OpenEventDashboard from '@/components/OpenEventDashboard';
 import BulkGuestImporter from '@/components/BulkGuestImporter';
 import EventCustomization from '@/components/EventCustomization';
+import InvitePreview from '@/components/InvitePreview';
 import s from '@/styles/eventDetail.module.scss';
 
 const RSVP_STATS = [
@@ -28,6 +29,7 @@ export default function EventDetailPage({ params }) {
   const [customization, setCustomization] = useState({});
   const [customizationSaving, setCustomizationSaving] = useState(false);
   const [customizationFeedback, setCustomizationFeedback] = useState('');
+  const [designOpen, setDesignOpen] = useState(false);
 
   useEffect(() => {
     api.get(`/events/${id}`)
@@ -162,16 +164,30 @@ export default function EventDetailPage({ params }) {
         </div>
       </section>
 
-      <EventCustomization
-        value={customization}
-        onChange={setCustomization}
-        onImageUpload={handleImageUpload}
-        canUploadImage={true}
-        currentImageUrl={event?.cover_value && event.cover_type === 'image' ? event.cover_value : null}
-        onSave={handleUpdateCustomization}
-        saving={customizationSaving}
-        feedback={customizationFeedback}
-      />
+      <InvitePreview customization={customization} event={event} />
+
+      <div className={s.designAccordion}>
+        <button
+          type="button"
+          className={s.designToggle}
+          onClick={() => setDesignOpen((prev) => !prev)}
+        >
+          <span>Personnaliser l'invitation</span>
+          <span className={`${s.chevron} ${designOpen ? s.open : ''}`}>▾</span>
+        </button>
+        {designOpen && (
+          <EventCustomization
+            value={customization}
+            onChange={setCustomization}
+            onImageUpload={handleImageUpload}
+            canUploadImage={true}
+            currentImageUrl={event?.cover_value && event.cover_type === 'image' ? event.cover_value : null}
+            onSave={handleUpdateCustomization}
+            saving={customizationSaving}
+            feedback={customizationFeedback}
+          />
+        )}
+      </div>
 
       {event.event_type === 'open' ? (
         <OpenEventDashboard

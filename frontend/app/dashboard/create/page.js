@@ -16,10 +16,11 @@ export default function CreateEventPage() {
     location: '',
     description: '',
     event_type: 'private',
-    theme: 'minimal',
+    theme: 'elegant_minimal',
     cover_type: 'gradient',
     cover_value: 'mint_default',
     custom_message: '',
+    font_style: 'classic',
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -126,6 +127,7 @@ export default function CreateEventPage() {
               cover_type: form.cover_type,
               cover_value: form.cover_value,
               custom_message: form.custom_message,
+              font_style: form.font_style,
             }}
             onChange={handleCustomizationChange}
             canUploadImage={false}

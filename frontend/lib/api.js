@@ -11,3 +11,12 @@ api.interceptors.request.use((config) => {
 });
 
 export default api;
+
+// Converts a relative upload path like /uploads/covers/abc.jpg to an absolute URL
+// using the same origin as the API (strips the /api suffix).
+export const getMediaUrl = (filePath) => {
+  if (!filePath) return null;
+  if (filePath.startsWith('http')) return filePath;
+  const base = (process.env.NEXT_PUBLIC_API_URL ?? '').replace(/\/api$/, '');
+  return `${base}${filePath}`;
+};
