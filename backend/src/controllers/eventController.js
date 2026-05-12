@@ -43,8 +43,8 @@ const create = async (req, res) => {
   }
 
   // Validate custom_message length
-  if (custom_message && custom_message.length > 160) {
-    return res.status(400).json({ error: 'custom_message must be 160 characters or less' });
+  if (custom_message && custom_message.length > 300) {
+    return res.status(400).json({ error: 'custom_message must be 300 characters or less' });
   }
 
   try {
@@ -128,8 +128,8 @@ const update = async (req, res) => {
       return res.status(400).json({ error: 'cover_type must be gradient or image' });
     }
 
-    if (custom_message && custom_message.length > 160) {
-      return res.status(400).json({ error: 'custom_message must be 160 characters or less' });
+    if (custom_message && custom_message.length > 300) {
+      return res.status(400).json({ error: 'custom_message must be 300 characters or less' });
     }
 
     // Update event with only provided fields

@@ -59,7 +59,7 @@ const Event = sequelize.define('Event', {
     allowNull: true,
   },
   custom_message: {
-    type: DataTypes.STRING(160),
+    type: DataTypes.STRING(300),
     allowNull: true,
   },
   font_style: {

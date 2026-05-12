@@ -139,9 +139,12 @@ export default function InvitePage({ params }) {
       }}
     >
       {/* Hero */}
-      <section className={s.hero}>
+      <section className={`${s.hero} ${coverType === 'image' && coverValue ? s.heroWithImage : ''}`}>
         {coverType === 'image' && coverValue ? (
-          <img src={getMediaUrl(coverValue)} alt="Couverture" className={s.heroCoverImage} />
+          <>
+            <img src={getMediaUrl(coverValue)} alt="Couverture" className={s.heroCoverImage} />
+            <div className={s.heroOverlay} />
+          </>
         ) : null}
         <div className={s.heroContent}>
           <p className={s.kicker}>Invitation</p>

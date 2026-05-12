@@ -69,6 +69,8 @@ export const COVER_GRADIENTS = {
   violet_default: 'linear-gradient(135deg, #a78bfa, #fb7185)',
   rose_default:   'linear-gradient(135deg, #fb7185, #fbbf24)',
   gold_default:   'linear-gradient(135deg, #fbbf24, #fb7185)',
+  noir:           'linear-gradient(135deg, #111111, #2d2d2d)',
+  pastel:         'linear-gradient(135deg, #e8d5f0, #d5e8f4)',
 };
 
 export const GRADIENT_OPTIONS = [
@@ -76,4 +78,6 @@ export const GRADIENT_OPTIONS = [
   { value: 'violet_default', name: 'Violet', key: 'violet' },
   { value: 'rose_default',   name: 'Rose',   key: 'rose' },
   { value: 'gold_default',   name: 'Or',     key: 'gold' },
+  { value: 'noir',           name: 'Noir',   key: 'noir' },
+  { value: 'pastel',         name: 'Pastel', key: 'pastel' },
 ];

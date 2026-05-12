@@ -195,7 +195,7 @@
 // Gradient swatches
 .gradientSwatches {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 
@@ -234,6 +234,14 @@
 
   &.gold {
     background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+  }
+
+  &.noir {
+    background: linear-gradient(135deg, #111111, #2d2d2d);
+  }
+
+  &.pastel {
+    background: linear-gradient(135deg, #e8d5f0, #d5e8f4);
   }
 
   .checkmark {

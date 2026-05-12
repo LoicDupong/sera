@@ -54,7 +54,7 @@ export default function EventCustomization({
 
   const handleMessageChange = (e) => {
     const text = e.target.value;
-    if (text.length <= 160) {
+    if (text.length <= 300) {
       onChange({ ...value, custom_message: text });
     }
   };
@@ -207,8 +207,8 @@ export default function EventCustomization({
             value={custom_message}
             onChange={handleMessageChange}
           />
-          <div className={`${s.messageCounter} ${custom_message.length >= 150 ? s.warning : ''}`}>
-            {custom_message.length} / 160
+          <div className={`${s.messageCounter} ${custom_message.length >= 270 ? s.warning : ''}`}>
+            {custom_message.length} / 300
           </div>
         </div>
       </div>
