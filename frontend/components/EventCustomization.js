@@ -1,22 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { THEME_CONFIGS, FONT_OPTIONS, getThemeConfig } from '@/lib/themeConfig';
+import { THEME_CONFIGS, FONT_OPTIONS, getThemeConfig, COVER_GRADIENTS, GRADIENT_OPTIONS } from '@/lib/themeConfig';
+import { getMediaUrl } from '@/lib/api';
 import s from '@/styles/eventCustomization.module.scss';
-
-const GRADIENT_OPTIONS = [
-  { value: 'mint_default', name: 'Mint', key: 'mint' },
-  { value: 'violet_default', name: 'Violet', key: 'violet' },
-  { value: 'rose_default', name: 'Rose', key: 'rose' },
-  { value: 'gold_default', name: 'Gold', key: 'gold' },
-];
-
-const COVER_GRADIENTS = {
-  mint_default: 'linear-gradient(135deg, var(--mint), var(--violet-soft))',
-  violet_default: 'linear-gradient(135deg, var(--violet), var(--rose))',
-  rose_default: 'linear-gradient(135deg, var(--rose), var(--gold))',
-  gold_default: 'linear-gradient(135deg, var(--gold), var(--rose))',
-};
 
 function getPreviewBackground(cover_type, cover_value, theme) {
   if (cover_type === 'image' && cover_value) return null;
@@ -87,13 +74,11 @@ export default function EventCustomization({
 
   return (
     <section className={s.section}>
-      <span className={s.sectionTitle}>Design de l'invitation</span>
-
       {/* Preview strip */}
       <div className={s.preview}>
         {cover_type === 'image' && (currentImageUrl || (cover_type === 'image' && cover_value && !COVER_GRADIENTS[cover_value])) ? (
           <img
-            src={currentImageUrl || cover_value}
+            src={getMediaUrl(currentImageUrl || cover_value)}
             alt="Aperçu couverture"
             className={s.previewImage}
           />
@@ -116,7 +101,10 @@ export default function EventCustomization({
             >
               <span
                 className={s.themeSwatch}
-                style={{ background: config.heroBg, borderColor: config.accent + '40' }}
+                style={{
+                  background: `linear-gradient(90deg, ${config.heroBg} 50%, ${config.accent} 50%)`,
+                  borderColor: 'rgba(255,255,255,0.12)',
+                }}
               />
               <span className={s.label}>{config.label}</span>
             </button>
@@ -134,9 +122,9 @@ export default function EventCustomization({
               type="button"
               className={`${s.fontOption} ${font_style === opt.value ? s.active : ''}`}
               onClick={() => handleFontChange(opt.value)}
-              style={{ fontFamily: opt.cssVar }}
             >
-              {opt.label}
+              <span className={s.fontSample} style={{ fontFamily: opt.cssVar }}>{opt.label}</span>
+              <span className={s.fontSublabel}>{opt.sublabel}</span>
             </button>
           ))}
         </div>
@@ -144,7 +132,7 @@ export default function EventCustomization({
 
       {/* Cover selector */}
       <div className={s.subsection}>
-        <label className={s.subsectionLabel}>Couverture de l'événement</label>
+        <label className={s.subsectionLabel}>Couverture</label>
         <div className={s.coverOptions}>
           <button
             type="button"
@@ -183,7 +171,7 @@ export default function EventCustomization({
         {cover_type === 'image' && canUploadImage && (
           <div className={s.uploaderWrapper}>
             {currentImageUrl && (
-              <img src={currentImageUrl} alt="Couverture actuelle" className={s.imagePreview} />
+              <img src={getMediaUrl(currentImageUrl)} alt="Couverture actuelle" className={s.imagePreview} />
             )}
             <div className={s.uploaderZone}>
               <input
@@ -212,7 +200,7 @@ export default function EventCustomization({
       {/* Custom message */}
       <div className={s.subsection}>
         <div className={s.messageField}>
-          <label htmlFor="custom-message">Message personnalisé</label>
+          <label htmlFor="custom-message">Message d'accueil</label>
           <textarea
             id="custom-message"
             placeholder="Bienvenue à tous ! C'est une joie de vous voir..."
