@@ -11,16 +11,14 @@
 
 .subsection {
   margin-bottom: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--glass-border);
-
-  &:first-of-type {
-    padding-top: 0;
-    border-top: none;
-  }
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  & + .subsection {
+    padding-top: 20px;
+    border-top: 1px solid var(--glass-border);
   }
 }
 
