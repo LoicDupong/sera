@@ -164,6 +164,46 @@ export default function EventDetailPage({ params }) {
         </div>
       </section>
 
+      <section className={s.guestPanel}>
+            <div className={s.sectionHeader}>
+              <div>
+                <p className={s.panelLabel}>Invités</p>
+                <h2>{filteredGuests.length} personne{filteredGuests.length !== 1 ? 's' : ''}</h2>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                <RsvpFilters active={filter} onChange={setFilter} />
+                <button
+                  className={s.filterTab}
+                  onClick={() => setShowBulkImport(!showBulkImport)}
+                  title="Importer des invités en masse"
+                >
+                  ↓ Importer
+                </button>
+              </div>
+            </div>
+
+            {showBulkImport && (
+              <BulkGuestImporter
+                onImport={handleBulkImport}
+                onCancel={() => setShowBulkImport(false)}
+              />
+            )}
+
+            <div className={s.guestList}>
+              {filteredGuests.length === 0 ? (
+                <p className={s.emptyGuests}>
+                  {filter === 'all' ? "Aucun invité pour l'instant." : 'Aucun invité dans cette catégorie.'}
+                </p>
+              ) : (
+                filteredGuests.map((guest) => (
+                  <GuestItem key={guest.id} guest={guest} onDelete={handleDeleteGuest} />
+                ))
+              )}
+            </div>
+
+            <AddGuestForm onAdd={handleAddGuest} />
+          </section>
+
       <InvitePreview customization={customization} event={event} />
 
       <div className={s.designAccordion}>
@@ -207,45 +247,7 @@ export default function EventDetailPage({ params }) {
             ))}
           </section>
 
-          <section className={s.guestPanel}>
-            <div className={s.sectionHeader}>
-              <div>
-                <p className={s.panelLabel}>Invités</p>
-                <h2>{filteredGuests.length} personne{filteredGuests.length !== 1 ? 's' : ''}</h2>
-              </div>
-              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                <RsvpFilters active={filter} onChange={setFilter} />
-                <button
-                  className={s.filterTab}
-                  onClick={() => setShowBulkImport(!showBulkImport)}
-                  title="Importer des invités en masse"
-                >
-                  ↓ Importer
-                </button>
-              </div>
-            </div>
-
-            {showBulkImport && (
-              <BulkGuestImporter
-                onImport={handleBulkImport}
-                onCancel={() => setShowBulkImport(false)}
-              />
-            )}
-
-            <div className={s.guestList}>
-              {filteredGuests.length === 0 ? (
-                <p className={s.emptyGuests}>
-                  {filter === 'all' ? "Aucun invité pour l'instant." : 'Aucun invité dans cette catégorie.'}
-                </p>
-              ) : (
-                filteredGuests.map((guest) => (
-                  <GuestItem key={guest.id} guest={guest} onDelete={handleDeleteGuest} />
-                ))
-              )}
-            </div>
-
-            <AddGuestForm onAdd={handleAddGuest} />
-          </section>
+          
         </>
       )}
     </div>
