@@ -14,19 +14,22 @@ const getEventBySlug = async (req, res) => {
 };
 
 const verifyGuest = async (req, res) => {
-  const { first_name, last_name } = req.body;
+  const { first_name, last_name, rsvp_status } = req.body;
   if (!first_name || !last_name) {
     return res.status(400).json({ error: 'Nom et prénom requis' });
   }
   const event = await Event.findOne({ where: { slug: req.params.slug } });
   if (!event) return res.status(404).json({ error: 'Event introuvable' });
 
-  // For open events: auto-create guest or return existing
+  // For open events: auto-create guest or update existing with chosen rsvp
   if (event.event_type === 'open') {
+    if (!rsvp_status || !['yes', 'no', 'maybe'].includes(rsvp_status)) {
+      return res.status(400).json({ error: 'rsvp_status invalide (yes / no / maybe)' });
+    }
+
     const inputFirst = normalize(first_name);
     const inputLast = normalize(last_name);
 
-    // Look for existing guest
     const allGuests = await Guest.findAll({
       where: { event_id: event.id },
       attributes: ['id', 'first_name', 'last_name', 'rsvp_status'],
@@ -37,6 +40,13 @@ const verifyGuest = async (req, res) => {
     );
 
     if (existingGuest) {
+      await existingGuest.update({ rsvp_status, responded_at: new Date() });
+      const subs = await PushSubscription.findAll({ where: { host_id: event.host_id } });
+      const label = rsvp_status === 'yes' ? '✅ présent(e)' : rsvp_status === 'no' ? '❌ absent(e)' : '🤔 peut-être';
+      subs.forEach(sub => sendPush(
+        { endpoint: sub.endpoint, keys: sub.keys },
+        { title: 'Sera', body: `${existingGuest.first_name} ${existingGuest.last_name} est ${label}` }
+      ));
       return res.json({
         found: true,
         guest_id: existingGuest.id,
@@ -44,13 +54,20 @@ const verifyGuest = async (req, res) => {
       });
     }
 
-    // Create new guest (auto-join with yes status)
     const newGuest = await Guest.create({
       event_id: event.id,
       first_name: first_name.trim(),
       last_name: last_name.trim(),
-      rsvp_status: 'yes',
+      rsvp_status,
+      responded_at: new Date(),
     });
+
+    const subs = await PushSubscription.findAll({ where: { host_id: event.host_id } });
+    const label = rsvp_status === 'yes' ? '✅ présent(e)' : rsvp_status === 'no' ? '❌ absent(e)' : '🤔 peut-être';
+    subs.forEach(sub => sendPush(
+      { endpoint: sub.endpoint, keys: sub.keys },
+      { title: 'Sera', body: `${newGuest.first_name} ${newGuest.last_name} est ${label}` }
+    ));
 
     return res.json({
       found: true,
