@@ -43,4 +43,19 @@ const remove = async (req, res) => {
   res.status(204).send();
 };
 
-module.exports = { add, remove };
+const updateRsvp = async (req, res) => {
+  const { rsvp_status } = req.body;
+  if (!rsvp_status || !['yes', 'no', 'maybe', 'pending'].includes(rsvp_status)) {
+    return res.status(400).json({ error: 'rsvp_status invalide (yes / no / maybe / pending)' });
+  }
+  const event = await ownsEvent(req.params.id, req.user.id);
+  if (!event) return res.status(404).json({ error: 'Event introuvable' });
+
+  const guest = await Guest.findOne({ where: { id: req.params.guestId, event_id: event.id } });
+  if (!guest) return res.status(404).json({ error: 'Invité introuvable' });
+
+  await guest.update({ rsvp_status, responded_at: new Date() });
+  res.json(guest);
+};
+
+module.exports = { add, remove, updateRsvp };

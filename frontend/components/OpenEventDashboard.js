@@ -10,7 +10,7 @@ const STATS = [
   { key: 'no', label: 'Absents' },
 ];
 
-export default function OpenEventDashboard({ guests, filter, onFilterChange, onDeleteGuest }) {
+export default function OpenEventDashboard({ guests, filter, onFilterChange, onDeleteGuest, onRsvpChange }) {
   const counts = useMemo(() => {
     return guests.reduce((acc, guest) => {
       acc[guest.rsvp_status] = (acc[guest.rsvp_status] || 0) + 1;
@@ -46,7 +46,7 @@ export default function OpenEventDashboard({ guests, filter, onFilterChange, onD
           </p>
         ) : (
           filteredGuests.map((guest) => (
-            <GuestItem key={guest.id} guest={guest} onDelete={onDeleteGuest} />
+            <GuestItem key={guest.id} guest={guest} onDelete={onDeleteGuest} onRsvpChange={onRsvpChange} />
           ))
         )}
       </div>

@@ -73,6 +73,11 @@ export default function EventDetailPage({ params }) {
     setGuests((prev) => prev.filter((g) => g.id !== guestId));
   };
 
+  const handleUpdateRsvp = async (guestId, rsvp_status) => {
+    await api.patch(`/events/${id}/guests/${guestId}`, { rsvp_status });
+    setGuests((prev) => prev.map((g) => g.id === guestId ? { ...g, rsvp_status } : g));
+  };
+
   const handleBulkImport = async (guests) => {
     try {
       const { data } = await api.post(`/events/${id}/guests/bulk`, { guests });
@@ -135,6 +140,7 @@ export default function EventDetailPage({ params }) {
   });
 
   const inviteLink = `${typeof window !== 'undefined' ? window.location.origin : ''}/invite/${event.slug}`;
+  const isOpen = event.event_type === 'open';
 
   return (
     <div className={s.page}>
@@ -164,13 +170,23 @@ export default function EventDetailPage({ params }) {
         </div>
       </section>
 
-      <section className={s.guestPanel}>
+      {isOpen ? (
+        <OpenEventDashboard
+          guests={guests}
+          filter={filter}
+          onFilterChange={setFilter}
+          onDeleteGuest={handleDeleteGuest}
+          onRsvpChange={handleUpdateRsvp}
+        />
+      ) : (
+        <>
+          <section className={s.guestPanel}>
             <div className={s.sectionHeader}>
               <div>
                 <p className={s.panelLabel}>Invités</p>
                 <h2>{filteredGuests.length} personne{filteredGuests.length !== 1 ? 's' : ''}</h2>
               </div>
-              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <div className={s.sectionActions}>
                 <RsvpFilters active={filter} onChange={setFilter} />
                 <button
                   className={s.filterTab}
@@ -196,7 +212,12 @@ export default function EventDetailPage({ params }) {
                 </p>
               ) : (
                 filteredGuests.map((guest) => (
-                  <GuestItem key={guest.id} guest={guest} onDelete={handleDeleteGuest} />
+                  <GuestItem
+                    key={guest.id}
+                    guest={guest}
+                    onDelete={handleDeleteGuest}
+                    onRsvpChange={handleUpdateRsvp}
+                  />
                 ))
               )}
             </div>
@@ -204,40 +225,6 @@ export default function EventDetailPage({ params }) {
             <AddGuestForm onAdd={handleAddGuest} />
           </section>
 
-      <InvitePreview customization={customization} event={event} />
-
-      <div className={s.designAccordion}>
-        <button
-          type="button"
-          className={s.designToggle}
-          onClick={() => setDesignOpen((prev) => !prev)}
-        >
-          <span>Personnaliser l'invitation</span>
-          <span className={`${s.chevron} ${designOpen ? s.open : ''}`}>▾</span>
-        </button>
-        {designOpen && (
-          <EventCustomization
-            value={customization}
-            onChange={setCustomization}
-            onImageUpload={handleImageUpload}
-            canUploadImage={true}
-            currentImageUrl={event?.cover_value && event.cover_type === 'image' ? event.cover_value : null}
-            onSave={handleUpdateCustomization}
-            saving={customizationSaving}
-            feedback={customizationFeedback}
-          />
-        )}
-      </div>
-
-      {event.event_type === 'open' ? (
-        <OpenEventDashboard
-          guests={guests}
-          filter={filter}
-          onFilterChange={setFilter}
-          onDeleteGuest={handleDeleteGuest}
-        />
-      ) : (
-        <>
           <section className={s.statsGrid} aria-label="Résumé RSVP">
             {RSVP_STATS.map((stat) => (
               <article key={stat.key} className={`${s.statCard} ${s[stat.key]}`}>
@@ -246,10 +233,34 @@ export default function EventDetailPage({ params }) {
               </article>
             ))}
           </section>
-
-          
         </>
       )}
+
+      <div className={s.designAccordion}>
+        <button
+          type="button"
+          className={s.designToggle}
+          onClick={() => setDesignOpen((prev) => !prev)}
+        >
+          <span>Aperçu &amp; personnalisation</span>
+          <span className={`${s.chevron} ${designOpen ? s.open : ''}`}>▾</span>
+        </button>
+        {designOpen && (
+          <>
+            <InvitePreview customization={customization} event={event} />
+            <EventCustomization
+              value={customization}
+              onChange={setCustomization}
+              onImageUpload={handleImageUpload}
+              canUploadImage={true}
+              currentImageUrl={event?.cover_value && event.cover_type === 'image' ? event.cover_value : null}
+              onSave={handleUpdateCustomization}
+              saving={customizationSaving}
+              feedback={customizationFeedback}
+            />
+          </>
+        )}
+      </div>
     </div>
   );
 }

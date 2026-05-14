@@ -2,7 +2,7 @@ const router = require('express').Router();
 const auth = require('../middlewares/auth');
 const multer = require('multer');
 const { create, list, getOne, update, remove, bulkAddGuests, uploadCover } = require('../controllers/eventController');
-const { add: addGuest, remove: removeGuest } = require('../controllers/guestController');
+const { add: addGuest, remove: removeGuest, updateRsvp } = require('../controllers/guestController');
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -19,6 +19,7 @@ router.delete('/:id', remove);
 
 router.post('/:id/guests', addGuest);
 router.post('/:id/guests/bulk', bulkAddGuests);
+router.patch('/:id/guests/:guestId', updateRsvp);
 router.delete('/:id/guests/:guestId', removeGuest);
 
 router.post('/:id/cover-image', upload.single('file'), uploadCover);
