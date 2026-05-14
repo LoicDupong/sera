@@ -42,6 +42,10 @@ const create = async (req, res) => {
     return res.status(400).json({ error: 'cover_type must be gradient or image' });
   }
 
+  if (cover_type === 'image' && !cover_value) {
+    return res.status(400).json({ error: 'cover_value requis quand cover_type est image' });
+  }
+
   // Validate custom_message length
   if (custom_message && custom_message.length > 300) {
     return res.status(400).json({ error: 'custom_message must be 300 characters or less' });

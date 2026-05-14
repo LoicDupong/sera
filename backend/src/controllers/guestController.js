@@ -1,5 +1,8 @@
 const { Event, Guest } = require('../models');
 
+const normalize = (str) =>
+  str.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim().replace(/\s+/g, ' ');
+
 const ownsEvent = async (eventId, hostId) => {
   const event = await Event.findOne({ where: { id: eventId, host_id: hostId } });
   return event;
@@ -13,9 +16,16 @@ const add = async (req, res) => {
   const event = await ownsEvent(req.params.id, req.user.id);
   if (!event) return res.status(404).json({ error: 'Event introuvable' });
 
-  const existing = await Guest.findOne({
-    where: { event_id: event.id, first_name, last_name },
-  });
+  if (event.event_type === 'open') {
+    return res.status(400).json({ error: "Impossible d'ajouter des invités à un événement ouvert" });
+  }
+
+  const allGuests = await Guest.findAll({ where: { event_id: event.id } });
+  const inputFirst = normalize(first_name);
+  const inputLast = normalize(last_name);
+  const existing = allGuests.find(
+    (g) => normalize(g.first_name) === inputFirst && normalize(g.last_name) === inputLast
+  );
   if (existing) return res.status(409).json({ error: 'Invité déjà dans la liste' });
 
   const guest = await Guest.create({ event_id: event.id, first_name, last_name });

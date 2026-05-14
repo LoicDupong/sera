@@ -33,6 +33,12 @@ app.use('/api/push', require('./routes/push'));
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
+// Global error handler — catches any error passed to next(err) or thrown in async handlers (Express 5)
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).json({ error: 'Une erreur interne est survenue' });
+});
+
 const PORT = process.env.PORT || 4000;
 
 sequelize.sync().then(() => {

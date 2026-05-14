@@ -99,6 +99,10 @@ const submitRsvp = async (req, res) => {
   const event = await Event.findOne({ where: { slug: req.params.slug } });
   if (!event) return res.status(404).json({ error: 'Event introuvable' });
 
+  if (event.event_type === 'open') {
+    return res.status(400).json({ error: 'Les événements ouverts utilisent /verify pour le RSVP' });
+  }
+
   const guest = await Guest.findOne({ where: { id: guest_id, event_id: event.id } });
   if (!guest) return res.status(404).json({ error: 'Invité introuvable' });
 
