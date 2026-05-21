@@ -134,10 +134,10 @@ const getEventCalendar = async (req, res) => {
   const event = await Event.findOne({ where: { slug: req.params.slug } });
   if (!event) return res.status(404).json({ error: 'Événement introuvable' });
 
-  const dateObj = new Date(event.date);
-  if (!event.date || isNaN(dateObj.getTime())) {
+  if (!event.date || isNaN(new Date(event.date).getTime())) {
     return res.status(404).json({ error: 'Date invalide' });
   }
+  const dateObj = new Date(event.date);
 
   const dtStart = toIcsDate(dateObj);
   const dtEnd = toIcsDate(new Date(dateObj.getTime() + 2 * 60 * 60 * 1000));
