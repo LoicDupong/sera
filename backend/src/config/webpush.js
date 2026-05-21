@@ -13,6 +13,8 @@ const sendPush = async (subscription, payload) => {
     if (err.statusCode === 410) {
       const { PushSubscription } = require('../models');
       await PushSubscription.destroy({ where: { endpoint: subscription.endpoint } });
+    } else {
+      console.error('[push] sendPush failed:', err.statusCode, err.message);
     }
   }
 };
