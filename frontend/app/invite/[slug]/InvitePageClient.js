@@ -166,7 +166,6 @@ export default function InvitePage({ params }) {
           <a
             href={`${process.env.NEXT_PUBLIC_API_URL}/invite/${slug}/calendar.ics`}
             className={s.calendarCta}
-            download
           >
             Ajouter à mon calendrier
           </a>
