@@ -18,15 +18,20 @@ const unsubscribe = async (req, res) => {
 };
 
 const testPush = async (req, res) => {
-  const subs = await PushSubscription.findAll({ where: { host_id: req.user.id } });
-  if (!subs.length) return res.status(404).json({ error: 'Aucune subscription trouvée' });
-  await Promise.allSettled(
-    subs.map((sub) => sendPush(
-      { endpoint: sub.endpoint, keys: sub.keys },
-      { title: 'Test Sera', body: 'Les notifications fonctionnent !', url: '/dashboard' }
-    ))
-  );
-  res.json({ sent: subs.length });
+  try {
+    const subs = await PushSubscription.findAll({ where: { host_id: req.user.id } });
+    if (!subs.length) return res.status(404).json({ error: 'Aucune subscription trouvée' });
+    await Promise.allSettled(
+      subs.map((sub) => sendPush(
+        { endpoint: sub.endpoint, keys: sub.keys },
+        { title: 'Test Sera', body: 'Les notifications fonctionnent !', url: '/dashboard' }
+      ))
+    );
+    res.json({ sent: subs.length });
+  } catch (err) {
+    console.error('[push] testPush error:', err.message);
+    res.status(500).json({ error: 'Erreur interne' });
+  }
 };
 
 module.exports = { subscribe, unsubscribe, testPush };

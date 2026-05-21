@@ -10,6 +10,7 @@ function urlBase64ToUint8Array(base64String) {
 }
 
 function isIosWithoutPwa() {
+  if (typeof window === 'undefined') return false;
   const ua = navigator.userAgent;
   const isIos = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
   const isStandalone = window.navigator.standalone === true;
@@ -48,7 +49,10 @@ export function usePushNotifications() {
         return;
       }
 
-      const registration = await navigator.serviceWorker.ready;
+      const swReadyTimeout = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error('SW ready timeout')), 10000)
+      );
+      const registration = await Promise.race([navigator.serviceWorker.ready, swReadyTimeout]);
       const existing = await registration.pushManager.getSubscription();
       const subscription = existing || await registration.pushManager.subscribe({
         userVisibleOnly: true,
@@ -58,6 +62,7 @@ export function usePushNotifications() {
       const p256dh = btoa(String.fromCharCode(...new Uint8Array(subscription.getKey('p256dh'))));
       const auth = btoa(String.fromCharCode(...new Uint8Array(subscription.getKey('auth'))));
       const token = localStorage.getItem('token');
+      if (!token) throw new Error('Not authenticated');
 
       const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/push/subscribe`, {
         method: 'POST',
