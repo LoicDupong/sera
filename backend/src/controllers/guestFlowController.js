@@ -131,39 +131,46 @@ const toIcsDate = (date) =>
   new Date(date).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
 
 const getEventCalendar = async (req, res) => {
-  const event = await Event.findOne({ where: { slug: req.params.slug } });
-  if (!event) return res.status(404).json({ error: 'Événement introuvable' });
+  try {
+    const event = await Event.findOne({ where: { slug: req.params.slug } });
+    if (!event) return res.status(404).json({ error: 'Événement introuvable' });
 
-  if (!event.date || isNaN(new Date(event.date).getTime())) {
-    return res.status(404).json({ error: 'Date invalide' });
+    if (!event.date || isNaN(new Date(event.date).getTime())) {
+      return res.status(404).json({ error: 'Date invalide' });
+    }
+    const dateObj = new Date(event.date);
+
+    const dtStart = toIcsDate(dateObj);
+    const dtEnd = toIcsDate(new Date(dateObj.getTime() + 2 * 60 * 60 * 1000));
+    const dtStamp = toIcsDate(new Date());
+
+    const appUrl = process.env.APP_URL || 'https://sera.app';
+
+    const ics = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//Sera//Event Invite//EN',
+      'CALSCALE:GREGORIAN',
+      'BEGIN:VEVENT',
+      `UID:${event.slug}@sera`,
+      `DTSTAMP:${dtStamp}`,
+      `DTSTART:${dtStart}`,
+      `DTEND:${dtEnd}`,
+      `SUMMARY:${escapeIcsText(event.title)}`,
+      `DESCRIPTION:${escapeIcsText(event.description)}`,
+      `LOCATION:${escapeIcsText(event.location)}`,
+      `URL:${appUrl}/invite/${event.slug}`,
+      'END:VEVENT',
+      'END:VCALENDAR',
+    ].join('\r\n');
+
+    res.setHeader('Content-Type', 'text/calendar; charset=utf-8');
+    res.setHeader('Content-Disposition', 'attachment; filename="sera-event.ics"');
+    res.send(ics);
+  } catch (err) {
+    console.error('[calendar] getEventCalendar error:', err.message);
+    res.status(500).json({ error: 'Erreur interne' });
   }
-  const dateObj = new Date(event.date);
-
-  const dtStart = toIcsDate(dateObj);
-  const dtEnd = toIcsDate(new Date(dateObj.getTime() + 2 * 60 * 60 * 1000));
-  const dtStamp = toIcsDate(new Date());
-
-  const ics = [
-    'BEGIN:VCALENDAR',
-    'VERSION:2.0',
-    'PRODID:-//Sera//Event Invite//EN',
-    'CALSCALE:GREGORIAN',
-    'BEGIN:VEVENT',
-    `UID:${event.slug}@sera`,
-    `DTSTAMP:${dtStamp}`,
-    `DTSTART:${dtStart}`,
-    `DTEND:${dtEnd}`,
-    `SUMMARY:${escapeIcsText(event.title)}`,
-    `DESCRIPTION:${escapeIcsText(event.description)}`,
-    `LOCATION:${escapeIcsText(event.location)}`,
-    `URL:https://sera.app/invite/${event.slug}`,
-    'END:VEVENT',
-    'END:VCALENDAR',
-  ].join('\r\n');
-
-  res.setHeader('Content-Type', 'text/calendar; charset=utf-8');
-  res.setHeader('Content-Disposition', 'attachment; filename="sera-event.ics"');
-  res.send(ics);
 };
 
 module.exports = { getEventBySlug, verifyGuest, submitRsvp, getEventCalendar };
