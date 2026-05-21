@@ -1,4 +1,5 @@
 const { PushSubscription } = require('../models');
+const { sendPush } = require('../config/webpush');
 
 const subscribe = async (req, res) => {
   const { endpoint, keys } = req.body;
@@ -16,4 +17,16 @@ const unsubscribe = async (req, res) => {
   res.status(204).send();
 };
 
-module.exports = { subscribe, unsubscribe };
+const testPush = async (req, res) => {
+  const subs = await PushSubscription.findAll({ where: { host_id: req.user.id } });
+  if (!subs.length) return res.status(404).json({ error: 'Aucune subscription trouvée' });
+  await Promise.allSettled(
+    subs.map((sub) => sendPush(
+      { endpoint: sub.endpoint, keys: sub.keys },
+      { title: 'Test Sera', body: 'Les notifications fonctionnent !', url: '/dashboard' }
+    ))
+  );
+  res.json({ sent: subs.length });
+};
+
+module.exports = { subscribe, unsubscribe, testPush };
