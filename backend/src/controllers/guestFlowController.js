@@ -127,7 +127,13 @@ const submitRsvp = async (req, res) => {
 const escapeIcsText = (str) =>
   (str || '').replace(/\\/g, '\\\\').replace(/,/g, '\\,').replace(/;/g, '\\;').replace(/\n/g, '\\n');
 
+// No Z suffix = floating time. Dates are stored as local time in the DB,
+// so we emit without timezone so calendar apps use the user's local clock.
 const toIcsDate = (date) =>
+  new Date(date).toISOString().replace(/[-:]/g, '').split('.')[0];
+
+// DTSTAMP must always be UTC per RFC 5545.
+const toIcsDateUTC = (date) =>
   new Date(date).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
 
 const getEventCalendar = async (req, res) => {
@@ -142,7 +148,7 @@ const getEventCalendar = async (req, res) => {
 
     const dtStart = toIcsDate(dateObj);
     const dtEnd = toIcsDate(new Date(dateObj.getTime() + 2 * 60 * 60 * 1000));
-    const dtStamp = toIcsDate(new Date());
+    const dtStamp = toIcsDateUTC(new Date());
 
     const appUrl = process.env.APP_URL || 'https://sera.app';
 

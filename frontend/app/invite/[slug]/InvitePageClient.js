@@ -261,6 +261,14 @@ export default function InvitePage({ params }) {
             <p className={s.confirmationMessage}>
               {isDark ? '✦ ' : ''}{CONFIRMATION_COPY[guest?.rsvp_status] || 'Ta réponse est bien enregistrée.'}
             </p>
+            {(guest?.rsvp_status === 'yes' || guest?.rsvp_status === 'maybe') && event.date && (
+              <a
+                href={`${process.env.NEXT_PUBLIC_API_URL}/invite/${slug}/calendar.ics`}
+                className={s.calendarCta}
+              >
+                Ajouter à mon calendrier
+              </a>
+            )}
           </div>
         )}
       </div>
