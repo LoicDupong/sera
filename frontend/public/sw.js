@@ -7,18 +7,20 @@ self.addEventListener('push', (event) => {
       body: data.body,
       icon: '/icons/icon.svg',
       badge: '/icons/icon.svg',
+      data: { url: data.url || '/dashboard' },
     })
   );
 });
 
 self.addEventListener('notificationclick', (event) => {
   event.notification.close();
+  const url = event.notification.data?.url || '/dashboard';
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((windowClients) => {
       for (const client of windowClients) {
-        if (client.url.includes('/dashboard') && 'focus' in client) return client.focus();
+        if (client.url.includes(url) && 'focus' in client) return client.focus();
       }
-      if (clients.openWindow) return clients.openWindow('/dashboard');
+      if (clients.openWindow) return clients.openWindow(url);
     })
   );
 });
