@@ -162,6 +162,16 @@ export default function InvitePage({ params }) {
         </p>
         {event.description && <p className={s.description}>{event.description}</p>}
 
+        {event.date && (
+          <a
+            href={`${process.env.NEXT_PUBLIC_API_URL}/invite/${slug}/calendar.ics`}
+            className={s.calendarCta}
+            download
+          >
+            Ajouter à mon calendrier
+          </a>
+        )}
+
         <div className={s.divider} />
 
         {step === 'verify' && (
