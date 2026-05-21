@@ -1,4 +1,28 @@
 const CACHE_NAME = 'sera-v2';
+
+self.addEventListener('push', (event) => {
+  const data = event.data?.json() ?? { title: 'Sera', body: 'Nouvelle notification' };
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: '/icons/icon.svg',
+      badge: '/icons/icon.svg',
+    })
+  );
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((windowClients) => {
+      for (const client of windowClients) {
+        if (client.url.includes('/dashboard') && 'focus' in client) return client.focus();
+      }
+      if (clients.openWindow) return clients.openWindow('/dashboard');
+    })
+  );
+});
+
 const STATIC_ASSETS = [
   '/',
   '/offline.html',

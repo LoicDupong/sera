@@ -1,5 +1,6 @@
 import './globals.css';
 import { Playfair_Display, Allura } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import PwaInstallPrompt from '@/components/PwaInstallPrompt';
 
 const playfair = Playfair_Display({
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <PwaInstallPrompt />
+        <Analytics />
       </body>
     </html>
   );
