@@ -3,43 +3,6 @@
 import { useEffect, useState } from 'react';
 import s from '@/styles/installPrompt.module.scss';
 
-function urlBase64ToUint8Array(base64String) {
-  const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
-  const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
-  const raw = atob(base64);
-  return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
-}
-
-async function subscribeToPush(registration) {
-  const token = localStorage.getItem('token');
-  if (!token) return;
-  if (!('Notification' in window) || !('pushManager' in registration)) return;
-  if (Notification.permission === 'denied') return;
-
-  const permission = Notification.permission === 'granted'
-    ? 'granted'
-    : await Notification.requestPermission();
-  if (permission !== 'granted') return;
-
-  const existing = await registration.pushManager.getSubscription();
-  const subscription = existing || await registration.pushManager.subscribe({
-    userVisibleOnly: true,
-    applicationServerKey: urlBase64ToUint8Array(process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY),
-  });
-
-  const p256dh = btoa(String.fromCharCode(...new Uint8Array(subscription.getKey('p256dh'))));
-  const auth = btoa(String.fromCharCode(...new Uint8Array(subscription.getKey('auth'))));
-
-  await fetch(`${process.env.NEXT_PUBLIC_API_URL}/push/subscribe`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({ endpoint: subscription.endpoint, keys: { p256dh, auth } }),
-  }).catch(() => {});
-}
-
 export default function PwaInstallPrompt() {
   const [installEvent, setInstallEvent] = useState(null);
   const [visible, setVisible] = useState(false);
@@ -48,7 +11,7 @@ export default function PwaInstallPrompt() {
     if (!('serviceWorker' in navigator)) return;
     if (['localhost', '127.0.0.1'].includes(window.location.hostname)) {
       navigator.serviceWorker.getRegistrations()
-        .then((registrations) => Promise.all(registrations.map((registration) => registration.unregister())))
+        .then((registrations) => Promise.all(registrations.map((r) => r.unregister())))
         .catch(() => {});
 
       if ('caches' in window) {
@@ -60,9 +23,7 @@ export default function PwaInstallPrompt() {
       return;
     }
 
-    navigator.serviceWorker.register('/sw.js')
-      .then((registration) => subscribeToPush(registration))
-      .catch(() => {});
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
 
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches
       || window.navigator.standalone === true;
@@ -92,7 +53,6 @@ export default function PwaInstallPrompt() {
 
   const handleInstall = async () => {
     if (!installEvent) return;
-
     installEvent.prompt();
     await installEvent.userChoice;
     setVisible(false);
