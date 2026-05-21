@@ -43,10 +43,12 @@ const verifyGuest = async (req, res) => {
       await existingGuest.update({ rsvp_status, responded_at: new Date() });
       const subs = await PushSubscription.findAll({ where: { host_id: event.host_id } });
       const label = rsvp_status === 'yes' ? '✅ présent(e)' : rsvp_status === 'no' ? '❌ absent(e)' : '🤔 peut-être';
-      subs.forEach(sub => sendPush(
-        { endpoint: sub.endpoint, keys: sub.keys },
-        { title: 'Sera', body: `${existingGuest.first_name} ${existingGuest.last_name} est ${label}` }
-      ));
+      await Promise.allSettled(
+        subs.map((sub) => sendPush(
+          { endpoint: sub.endpoint, keys: sub.keys },
+          { title: 'Nouvelle réponse', body: `${existingGuest.first_name} ${existingGuest.last_name} est ${label}`, url: `/dashboard/${event.id}` }
+        ))
+      );
       return res.json({
         found: true,
         guest_id: existingGuest.id,
@@ -64,10 +66,12 @@ const verifyGuest = async (req, res) => {
 
     const subs = await PushSubscription.findAll({ where: { host_id: event.host_id } });
     const label = rsvp_status === 'yes' ? '✅ présent(e)' : rsvp_status === 'no' ? '❌ absent(e)' : '🤔 peut-être';
-    subs.forEach(sub => sendPush(
-      { endpoint: sub.endpoint, keys: sub.keys },
-      { title: 'Sera', body: `${newGuest.first_name} ${newGuest.last_name} est ${label}` }
-    ));
+    await Promise.allSettled(
+      subs.map((sub) => sendPush(
+        { endpoint: sub.endpoint, keys: sub.keys },
+        { title: 'Nouvelle réponse', body: `${newGuest.first_name} ${newGuest.last_name} est ${label}`, url: `/dashboard/${event.id}` }
+      ))
+    );
 
     return res.json({
       found: true,
@@ -110,10 +114,12 @@ const submitRsvp = async (req, res) => {
 
   const subs = await PushSubscription.findAll({ where: { host_id: event.host_id } });
   const label = rsvp_status === 'yes' ? '✅ présent(e)' : rsvp_status === 'no' ? '❌ absent(e)' : '🤔 peut-être';
-  subs.forEach(sub => sendPush(
-    { endpoint: sub.endpoint, keys: sub.keys },
-    { title: 'Sera', body: `${guest.first_name} ${guest.last_name} est ${label}` }
-  ));
+  await Promise.allSettled(
+    subs.map((sub) => sendPush(
+      { endpoint: sub.endpoint, keys: sub.keys },
+      { title: 'Nouvelle réponse', body: `${guest.first_name} ${guest.last_name} est ${label}`, url: `/dashboard/${event.id}` }
+    ))
+  );
 
   res.json({ success: true, rsvp_status: guest.rsvp_status });
 };
