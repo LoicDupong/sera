@@ -5,6 +5,7 @@ import api from '@/lib/api';
 import EventCard from '@/components/EventCard';
 import useAuthStore from '@/store/authStore';
 import s from '@/styles/dashboard.module.scss';
+import NotificationToggle from '@/components/NotificationToggle';
 
 export default function DashboardPage() {
   const user = useAuthStore((state) => state.user);
@@ -44,6 +45,8 @@ export default function DashboardPage() {
           Créer un événement
         </Link>
       </section>
+
+      <NotificationToggle />
 
       <section className={s.statsGrid} aria-label="Résumé des événements">
         <article className={`${s.statCard} ${s.coral}`}>
