@@ -40,4 +40,4 @@ Next.js · Express · PostgreSQL · JWT
 
 ---
 
-*Fait par Loïc Dupong — [loic@dgco-it.be](mailto:loic@dgco-it.be)*
+*Fait par Loïc Dupong*
